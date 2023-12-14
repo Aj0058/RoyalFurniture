@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swastrade</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/infinite.jpg' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Media.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Home.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="navbar">
+        <div id="navbar-right">
+            <a href="http://127.0.0.1:8000/">Home</a>
+            <a href="http://127.0.0.1:8000/AboutUS">Aboutus</a>
+            <a href="http://127.0.0.1:8000/Lights1">Shop Now</a>
+            <a href="http://127.0.0.1:8000/Contact">contactUS</a>
+        </div>
+        <div class="logo">
+            <a href="http://127.0.0.1:8000/"><img src="{% static 'images/Royale.jpg' %}" alt=""></a>
+        </div>
+        
+        <div class="Email">
+            <a href="#"></a>
+        </div>
+        
+        <div class="Cart">
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+
+        <div class="Login">
+          <a href="http://127.0.0.1:8000/Login1#"><i class="fa-sharp fa-solid fa-image-portrait"></i></a>  
+        </div>
+        <a class="Hover-link" href="#"><i class="fa-solid fa-bars"></i></a>
+    </div>
+</body>
+</html>
+
+<style>
+body {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: black;
+    background-image: linear-gradient(goldenrod);
+    color: #fff;
+    font-family:serif;
+    overflow-x: hidden;
+      
+  }
+
+::-webkit-scrollbar{
+    width: 10px;
+
+}
+::-webkit-scrollbar-track{
+    background-color:black;
+  }
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(120deg, rgba(226, 189, 67, 0.7), rgba(74, 112, 48, 0.5), rgba(53, 91, 102, 0.9));
+
+
+  }
+
+
+
+#navbar {
+    overflow: hidden;
+    background-size: 100%;
+    padding: 10px 10px;
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    text-align: center; /* Center align the navbar content */
+    backdrop-filter: blur(10px); /* Add backdrop-filter with the desired blur radius */
+    background-color: rgba(0, 0, 0, 0.0);
+    height: 100px;
+}
+#navbar-right {
+    display: inline-block; /* Change from float to inline-block */
+    margin-top: 10px; /* Add margin to align the content vertically */
+}
+
+#navbar-right a {
+    margin: 0 20px; /* Add horizontal margin between navbar items */
+}
+
+#navbar a {
+    float: left;
+    color: burlywood;
+    text-align: left;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 20px;
+    border-radius: 4px;
+    font-family: serif;
+    margin-left: 20px;
+    transition: 0.5s ease; /* Add a smooth transition effect */
+}
+
+#navbar a:hover {
+    color: white; /* Change the text color to white on hover */
+}
+
+
+ .logo img{
+    height: 120px;
+    margin-left: 30px;
+    margin-top: -75px;
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+    width:110px;
+    
+}
+ i {
+margin-left: 1090px;
+position: absolute;
+margin-top: -45px;
+font-size: 30px;
+display: flex;
+
+}
+.Email{
+margin-left: 150px;
+position: absolute;
+}
+
+.Cart{
+margin-left: 230px;
+}
+
+.Login{
+margin-left: 320px;
+position: absolute;
+
+}
+.Hover-link i{
+margin-left: -280px;
+position: absolute;
+margin-top: -40px;
+
+}
+
+</style>
+<div class="banner">
+<h1>.</h1>
+<img  class="img1"src="{% static 'images/Sofa222.jpg' %}"/>
+<img  class="img2"src="{% static 'images/Hang23.jpeg' %}"/>
+<img  class="img3"src="{% static 'images/Chairrr.jpg' %}"/>
+<img  class="img4"src="{% static 'images/Floor16.jpg' %}"/>
+<img  class="img5"src="{% static 'images/bulb.Webp' %}"/>
+<img  class="img6"src="{% static 'images/Stool2323.Webp' %}"/>
+<img  class="img7"src="{% static 'images/Royale.jpg' %}"/>
+</div>
+<style>
+.banner h1{
+font-size: 1px;
+border: groove;
+width: 500px;
+height: 500px;
+margin-top: 100px;
+border-width: 1px;
+background-color: rgb(61, 31, 10);
+margin-left: 1000px;
+border-radius: 550px;
+box-shadow: 2px 0px 2px  white;
+position: absolute;
+}
+.img1{
+border-radius: 350px;
+width: 150px;
+height: 150px;
+margin-left: 970px;
+margin-top: 140px;
+position: absolute;
+}
+.img2{
+border-radius: 350px;
+width: 150px;
+height: 150px;
+margin-left: 1200px;
+margin-top:500px;
+position: absolute;
+}
+
+.img3{
+border-radius: 350px;
+width: 150px;
+height: 150px;
+margin-left: 1400px;
+margin-top:370px;
+position: absolute;
+}
+
+.img4{
+border-radius: 350px;
+width: 150px;
+height: 150px;
+margin-left: 1350px;
+margin-top:120px;
+position: absolute;
+}
+
+.img5{
+border-radius: 350px;
+width: 150px;
+height: 150px;
+margin-left: 1150px;
+margin-top:10px;
+position: absolute;
+}
+
+.img6{
+border-radius: 350px;
+width: 150px;
+height: 150px;
+margin-left: 970px;
+margin-top:500px;
+position: absolute;
+}
+.img7{
+border-radius: 350px;
+width: 150px;
+height: 150px;
+margin-left: 1170px;
+margin-top:280px;
+position: absolute;
+
+}
+.banner{
+margin-top: 85px;
+margin-left: -50px;
+margin-top:70px;
+}
+
+    .img1, .img2, .img3, .img4, .img5, .img6, .img7 {
+      border-radius: 350px;
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      animation: rotate 10s linear infinite;
+    }
+  
+    .img1 { margin-left: 970px; margin-top: 140px; }
+    .img2 { margin-left: 1200px; margin-top: 500px; }
+    .img3 { margin-left: 1400px; margin-top: 370px; }
+    .img4 { margin-left: 1350px; margin-top: 120px; }
+    .img5 { margin-left: 1150px; margin-top: 10px; }
+    .img6 { margin-left: 970px; margin-top: 400px; }
+    .img7 { margin-left: 1170px; margin-top: 280px; }
+  
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+</style>
+  
+<div class="Heading1">
+    <h1>Have any Quaries?</h1>
+    <p>At [Royale furniture], we value your questions and are here<br> to assist you. Whether you have inquiries about<br> our products, services, or just want to learn<br> more about what we offer, our dedicated<br> team is ready to provide the information you need.<br> Your satisfaction is our priority, and we encourage you to<br> reach out with any queries you may have.</p>
+</div>  
+
+<style>
+.Heading1 h1{
+margin-top: 250px;
+position: absolute;
+font-size: 50px;
+margin-left: 270px;
+color: cadetblue;
+font-family: serif;
+}
+.Heading1 p{
+margin-top: 320px;
+position: absolute;
+font-size: 24px;
+margin-left: 200px;
+text-align: center;
+color: cadetblue;
+font-family: serif;
+}
+</style>
+
+<div class="Map">
+<h1>Our Location</h1>
+<p>Nestled in the vibrant heart of [Agra], our location is a<br> testament to convenience and accessibility. Situated amidst<br> the bustling streets and lively atmosphere of the city, we are proud to call<br>this dynamic neighborhood our home. Whether you're a local<br> resident or visiting from afar, our central location makes us easily accessible,<br> creating a welcoming space for all. Explore the nearby attractions,<br> savor the local flavors, and experience the unique charm of [Agra] right at<br> our doorstep. We invite you to join us and discover the distinctive blend of comfort<br> and excitement that our location has to offer.</p>
+</div>
+
+<div class="location">
+    <iframe class="Google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3548.2617561268053!2d77.98477548121815!3d27.210930486561928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397470cc6c18e4e9%3A0xe8140a1e3e8a8914!2sE-gain%20Software%20Education%20Agra!5e0!3m2!1sen!2sin!4v1701540239332!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+<style>
+.Map h1{
+margin-top: 750px;
+position: absolute;
+margin-left: 700px;
+text-align: center;
+font-size: 50px;
+color: rgb(184, 124, 33);
+font-family: serif;
+}    
+.Map p{
+margin-top:820px;
+position: absolute;
+margin-left: 400px;
+font-size: 25px;
+font-family: serif;
+text-align: center;
+color: rgb(185, 124, 33);
+}
+
+
+
+.Google{
+width: 1400px;
+margin-left: 100px;
+position: absolute;
+margin-top: 1150px;
+border-radius: 10px;
+box-shadow:  5px 5px 2px rgb(68, 30, 30);
+height: 500px;
+}
+
+</style>
+
+<div class="Social">
+<h1>Follow Us</h1>
+<p>Embark on a journey with us as we navigate through<br> creativity, inspiration, and innovation. Stay connected and be a part<br> of our community by following us on our social media channels.<br> From exciting updates and behind-the-scenes glimpses to<br> exclusive offers and engaging content, our social platforms<br> are the perfect portals to stay in the loop. </p>
+</div>
+<style>
+.Social h1{
+margin-top: 1700px;
+position: absolute;
+margin-left: 950px;
+font-size: 50px;
+color: springgreen;
+font-family: serif;
+}    
+.Social p{
+margin-top: 1770px;
+position: absolute;
+font-size: xx-large;
+margin-left: 700px;
+font-size: 25px;
+text-align: center;
+color:rgb(62, 160, 106);
+font-family: serif;
+}
+.Social{
+margin-left: -200px;
+
+}
+</style>
+<div class="Parallex">
+    <img  class="img33"src="{% static 'images/bed3535.jpeg' %}"/>
+    <h1>.</h1>
+</div>
+
+<style>
+.Parallex img{
+margin-top: 2250px;
+position: absolute;
+margin-left: 10px;
+width: 1549px;
+height: 500px;
+border-radius: 7px;
+transform: translate(0, -50%);
+box-shadow: 0px 0px 5px white;
+}
+    
+
+.Parallex {
+    overflow: hidden;
+    height: 600px; /* Adjust the height as needed */
+}
+
+.Parallex h1{
+margin-top: 2000px;
+position: absolute;
+width: 1550px;
+height: 500px;
+background-color: rgba(0, 0, 0, 0.7);
+font-size: 1px;
+border-radius: 10px;
+margin-left:10px;
+}
+.Parallex h1:hover{
+background-color: rgba(0,0,0,0.4);
+transition: 0.5s ease;
+}
+
+
+</style>
+<script>
+// Initialize ScrollReveal
+ScrollReveal().reveal('.Heading1 h1', {
+    delay: 500,
+    distance: '50px',
+    origin: 'bottom',
+    easing: 'ease-in-out',
+    reset: true
+});
+
+ScrollReveal().reveal('.Heading1 p', {
+    delay: 700,
+    distance: '50px',
+    origin: 'bottom',
+    easing: 'ease-in-out',
+    reset: true
+});
+
+ScrollReveal().reveal('.Map h1, .Map p', {
+    delay: 500,
+    distance: '50px',
+    origin: 'top',
+    easing: 'ease-in-out',
+    reset: true
+});
+
+
+ScrollReveal().reveal('.Social h1, .Social p', {
+    delay: 500,
+    distance: '50px',
+    origin: 'bottom',
+    easing: 'ease-in-out',
+    reset: true
+});
+
+</script>
+
+<div class="Media">
+<h1>.</h1>
+<a class="Whats" href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+<a class="link" href="https://www.linkedin.com/in/anvesh-jain-22875b264/"><i class="fa-brands fa-linkedin"></i></a>
+<a class="Face" href="#"><i class="fa-brands fa-facebook"></i></a>
+
+</div>
+ 
+<style>
+.Media h1{
+position: absolute;
+margin-top: 1400px;
+margin-left: 500px;
+font-size: 1px;
+width: 500px;
+height: 500px;
+background-color: rgb(44, 23, 7,0.9);
+}    
+.Whats  {
+position: absolute;
+margin-top: 1650px;
+margin-left: -500px;
+width: 100px;
+height: 100px;
+color: goldenrod;
+}
+
+.link  {
+position: absolute;
+margin-top: 1650px;
+margin-left: -370px;
+width: 100px;
+height: 100px;
+color: goldenrod;
+}
+
+.Face  {
+position: absolute;
+margin-top: 1650px;
+margin-left: -250px;
+width: 100px;
+height: 100px;
+color: goldenrod;
+}
+
+.fa-brands{
+font-size: 70px;
+}
+.Media{
+margin-left: 50px;
+}
+
+.Whats:hover{
+background-color: Goldenrod;
+transition: 0.5s ease;
+
+}
+</style>
+
+<div class="Address">
+<h1>You can Contact Us.</h1>
+<p>Feel free to reach out to us with any questions, inquiries, or feedback. Our dedicated<br> team is here to assist you and provide the information you need.<br> Whether you're interested in our products, services, or<br> just want to connect, we value your communication.<br> You can contact us via email at contact@example.com<br> or by filling out the contact form below. </p>
+</div>
+
+<style>
+.Address h1{
+margin-top: 2000px;
+position: absolute;
+margin-left: 650px;
+font-size: 45px;
+text-decoration-line:dashed;
+color: bisque;
+font-family: serif;
+}
+.Address p{
+position: absolute;
+margin-top:2060px ;
+margin-left: 450px;
+text-align: center;
+font-size: 23px;
+color: antiquewhite;
+font-family: serif;
+}
+</style>
+
+<div class="cards1">
+    <h1>.</h1>
+    <h2>.</h2>
+    <h3>.</h3>
+</div>
+
+<style>
+    .cards1 h1 {
+        position: absolute;
+        margin-top: 2100px;
+        font-size: 1px;
+        border-radius: 20px;
+        width: 400px;
+        height: 300px;
+        border-width: 100px;
+        background: linear-gradient(120deg, rgba(0, 0, 0, 0.7), rgba(206, 50, 5, 0.5), rgba(0, 0, 0, 0.9));
+        margin-left: 100px;
+        border: dashed;
+        border-color: rgba(200, 100, 5, 0.5);
+    }
+
+    .cards1 h2 {
+        position: absolute;
+        margin-top: 2100px;
+        font-size: 1px;
+        border-radius: 20px;
+        width: 400px;
+        height: 300px;
+        border-width: 100px;
+        background: linear-gradient(120deg, rgba(0, 0, 0, 0.7), rgba(206, 50, 5, 0.5), rgba(0, 0, 0, 0.9));
+        margin-left: 600px;
+        border: dashed;
+        border-color:  rgba(200, 100, 5, 0.5);;
+    }
+
+    .cards1 h3 {
+        position: absolute;
+        margin-top: 2100px;
+        font-size: 1px;
+        border-radius: 20px;
+        width: 400px;
+        height: 300px;
+        border-width: 1px;
+        background: linear-gradient(120deg, rgba(0, 0, 0, 0.7), rgba(200, 50, 5, 0.5), rgba(0, 0, 0, 0.9));
+        margin-left: 1100px;
+        border: dashed;
+        border-color:  rgba(200, 100, 5, 0.5);
+    }
+
+    .cards1{
+     position: absolute;
+     margin-top: 200px;   
+
+    }
+</style>
+<div class="Distor">
+
+    <h1>Address</h1>
+    <p>Showroom Address:<br>
+    Royal furniture private Ltd<br>
+    Bhagwan talkies near<br>
+    SRK mall Agra</p>
+
+    <h2>Email ID</h2>
+    <h5 class="">Email Address:<br>
+        Royalfurniture@gmail.com</h5>
+    
+    <h3>Mobile Number</h3>
+    <h4 class="">Phone:<br>
+             91+ 8949167574,91+ 9694140058<br>
+            </h4>
+            
+
+</div>
+
+<style>
+.Distor {
+margin-top: 2300px;
+
+}
+
+.Distor h1{
+margin-left: 230px;
+margin-top: 50px;
+text-align: center;
+position: absolute;
+color: gold;
+font-family: serif;
+}
+.Distor p{
+
+position: absolute;
+margin-left: 170px;
+margin-top: 100px;
+text-align: center;
+font-size: 21px;
+font-family: serif;
+}
+.Distor h2{
+margin-left: 730px;
+margin-top: 50px;
+text-align: center;
+position: absolute;
+color: gold;
+font-size: 30px;
+font-family: serif;
+}
+
+.Distor h5{
+margin-left: 680px;
+margin-top: 100px;
+text-align: center;
+position: absolute;
+font-size: 22px;
+font-weight: 300;
+font-family: serif;
+
+}
+
+.Distor h3{
+margin-left: 1200px;
+margin-top: 50px;
+text-align: center;
+position: absolute;
+color: gold;
+font-size: 27px;
+font-family: serif;
+
+}
+.Distor h4{
+margin-left: 1150px;
+margin-top: 100px;
+text-align: center;
+position: absolute;
+font-size: 22px;
+font-weight: 300;
+font-family: serif;
+}
+
+</style>
+
+
+<div class="Footer">
+    <h1>.</h1>  
+    <a href="#"><img src="{% static 'images/Royale.jpg' %}" alt=""></a>      
+     
+  </div>
+  
+  <div class="Eng">
+  <h1>Enquires</h1>
+  <p>For More Details and Enquires:<br>Login to www.RoyalFurniture.com<br>TheRoyaleFurniture@gmail.com<br>+91 8949167574,+91 9694140058</p>
+  <h5 class="open">Bussiness Hours<br>Open Timeing 10:30AM to 8:30PM<br>all day Open</h5>
+  
+  </div>
+  
+  <style>
+  .Eng h1{
+  
+  margin-top: 450px;
+  position: absolute;
+  color: goldenrod;
+  margin-left: 250px;
+  text-decoration: underline;
+  text-decoration-thickness:0.3px;
+  font-family: serif;  
+}
+  
+  .Eng p{
+  margin-top: 500px;
+  position: absolute;
+  margin-left: 250px;
+  font-size: 23px;
+  font-family: serif;
+  }
+  .open{
+  margin-top: 650px;
+  position: absolute;
+  margin-left:250px;
+  font-size: 23px;
+  font-weight: 300;
+  font-family: serif;
+  }
+  
+  .Import {
+  margin-top: 450px;
+  position: absolute;    
+  font-size: 28px;
+  color:goldenrod;
+  margin-left: 750px;
+  text-decoration: underline;
+  text-decoration-thickness: 0.2px;
+  font-family: serif;
+  }
+  
+  .Prod{
+  margin-top: 450px;
+  position: absolute;    
+  font-size: 28px;
+  color:goldenrod;
+  margin-left: 1000px;
+  text-decoration: underline;
+  text-decoration-thickness: 0.2px;
+  font-family: serif ;
+  }
+  .Add{
+  margin-top: 450px;
+  position: absolute;    
+  font-size: 28px;
+  color:goldenrod;
+  margin-left: 1300px;
+  text-decoration: underline;
+  text-decoration-thickness: 0.2px;
+  font-family: serif;
+  }
+
+.Footer h1{
+margin-top: 400px;
+width: 1600px;
+height: 630px;
+margin-left: -10px;
+font-size: 1px;
+background-color: rgba(48, 29, 7, 0.9);
+border-top-right-radius: 30px;
+border-top-left-radius: 50px;
+position: absolute;
+}
+
+.Footer img{
+margin-top: 430px;
+position: absolute;
+width: 100px;
+height: 100px;
+border-radius: 50px;
+margin-left: 50px;
+box-shadow: 0px 7px 5px brown;
+}
+
+  </style>
+  <div class="Footer1">
+  <h1 class="Import">Important</h1>
+  <h1 class="Prod">Products</h1>
+  <h1 class="Add">Address</h1>
+  </div>
+  
+  <div class="Import1">
+  <a class="Home" href="http://127.0.0.1:8000/">Home</a>
+  <a class="Class"href="http://127.0.0.1:8000/AboutUS">Aboutus</a>
+  <a class="About"href="#">Light</a>
+  <a class="Lightss"href="#">Furniture</a>
+  <a class="Con"href="#">Contact</a>
+  <a class="Sign"href="#">Signin</a>
+  
+  
+  </div>
+  
+  <style>
+  .Home{
+  margin-top: 500px;
+  position: absolute;
+  margin-left: 780px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family:serif;  
+}
+  .Class{
+  margin-top: 530px;
+  position: absolute;
+  margin-left: 780px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;  
+}
+  .About{
+  margin-top: 560px;
+  position: absolute;
+  margin-left: 780px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;  
+}
+  
+  .Lightss{
+  margin-top: 590px;
+  position: absolute;
+  margin-left: 780px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  }
+  
+  .Con{
+  margin-top: 620px;
+  position: absolute;
+  margin-left: 780px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;  
+}
+  
+  
+  .Sign{
+  margin-top: 650px;
+  position: absolute;
+  margin-left: 780px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;  
+}
+  .Import1 a:hover{
+  color: goldenrod;
+  transition: 0.5s ease;
+  }
+  .Import1 a{
+  font-size: 23px;
+  }
+  .Import1{
+   margin-top:450px; 
+
+  }    
+  </style>
+  <div class="Pro">
+      <a class="Bed1" href="#">Beds</a>
+      <a class="Chair"href="#">Chairs</a>
+      <a class="Bulb"href="#">Light</a>
+      <a class="Candle"href="#">Candliers</a>
+      <a class="Lamp23"href="#">Lamps</a>
+      <a class="Crouh"href="#">Crouches</a>
+      <a class="Out"href="#">Outdoor Lights</a>
+      <a class="Gard"href="#">Gardenlights</a>
+  </div>
+  <style>
+  .Bed1{
+  
+  margin-top: 500px;
+  position: absolute;
+  margin-left: 1100px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  }
+  
+  .Chair{
+  
+  margin-top: 530px;
+  position: absolute;
+  margin-left: 1100px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  }
+  
+  .Bulb{
+  
+  margin-top:560px;
+  position: absolute;
+  margin-left: 1100px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  }
+  
+  .Candle{
+  
+  margin-top: 590px;
+  position: absolute;
+  margin-left: 1100px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  
+  }
+  
+  .Lamp23{
+  
+  margin-top: 620px;
+  position: absolute;
+  margin-left: 1100px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  
+  }
+  
+  .Crouh{
+  
+  margin-top: 650px;
+  position: absolute;
+  margin-left: 1100px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  }
+  
+  .Out{
+  
+  margin-top: 680px;
+  position: absolute;
+  margin-left: 1100px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  
+  }
+  
+  .Gard{
+  
+  margin-top: 710px;
+  position: absolute;
+  margin-left: 1100px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  
+  }
+  
+  .Pro {
+  margin-left: -80px;
+  }
+  .Pro a{
+  font-size: 23px;
+  }
+  
+  .Pro a:hover{
+  color: goldenrod;
+  transition: 0.5s ease;
+  }
+  .Showroom p{
+  margin-top: 500px;
+  position: absolute;
+  margin-left: 1280px;
+  font-size: 23px;
+  font-family: serif;  
+}
+  .Showroom .Pin{
+  margin-top: 650px;
+  position: absolute;
+  }
+  .Log{
+  position: absolute;
+  margin-top: 750px;
+  margin-left: 1270px;
+  font-size: 35px;
+  text-decoration: none;
+  color: goldenrod;
+  border: ridge;
+  border-radius:150px;
+  padding: 8px 20px;
+  background-color: black;
+  border-color: goldenrod;  
+  font-family: serif;  
+}
+  .Log:hover{
+  padding: 8px 25px;
+  transition: 0.5s ease;
+  }
+  .Showroom{
+    margin-top: 0px;
+
+  }
+  </style>
+  <div class="Showroom">
+  <p>Showroom Address:<br>Royal furniture private Ltd<br>Bhagwan talkies near<br> SRK mall Agra</p>
+  <p class="Pin"> Pincode:-328024</p>
+  <a class="Log" href="#">Login</a>
+  </div>
+  
+  
+  
+  
+  
+  </style>
+
+  <button id="scrollToTopBtn" onclick="scrollToTop()">Scroll to Top</button>
+
+<style>
+  #scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color:burlywood;
+    color: black;
+    border: ridge;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    border-color: black;
+}
+  
+  #scrollToTopBtn:hover {
+    background-color: black;
+    color: burlywood;
+    transition: 0.5s ease;
+    border-color: gold;
+}
+  
+  
+  </style>
+      
+  <script>
+  // Function to scroll back to the top of the page smoothly
+  function scrollToTop() {
+    // Scroll to the top of the page using the `scrollTo` method
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Adds smooth scrolling effect
+    });
+  }
+  
+  // Attach a scroll event listener to the window
+  window.addEventListener('scroll', function() {
+    var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    
+    // Show the button when the user has scrolled down 20% of the page height
+    if (document.body.scrollTop > window.innerHeight * 0.2 || document.documentElement.scrollTop > window.innerHeight * 0.2) {
+      scrollToTopBtn.style.display = 'block';
+    } else {
+      scrollToTopBtn.style.display = 'none';
+    }
+  });
+  </script>
+

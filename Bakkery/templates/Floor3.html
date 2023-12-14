@@ -1,0 +1,2027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swastrade</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/infinite.jpg' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Media.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Home.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="navbar">
+        <div id="navbar-right">
+            <a href="http://127.0.0.1:8000/">Home</a>
+            <a href="http://127.0.0.1:8000/AboutUS">Aboutus</a>
+            <a href="http://127.0.0.1:8000/Lights1">Shop Now</a>
+            <a href="http://127.0.0.1:8000/Contact">contactUS</a>
+        </div>
+        <div class="logo">
+            <a href="http://127.0.0.1:8000/"><img src="{% static 'images/Royale.jpg' %}" alt=""></a>
+        </div>
+        
+        <div class="Email">
+            <a href="#"></a>
+        </div>
+        
+        <div class="Cart">
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+
+        <div class="Login">
+          <a href="#"><i class="fa-sharp fa-solid fa-image-portrait"></i></a>  
+        </div>
+        <a class="Hover-link" href="#"><i class="fa-solid fa-bars"></i></a>
+    </div>
+</body>
+</html>
+
+<style>
+body {
+    height: 700px;
+    background-color: black;
+    background-image: linear-gradient(goldenrod);
+    color: #fff;
+}
+
+#navbar {
+    overflow: hidden;
+    background-size: 100%;
+    padding: 10px 10px;
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    text-align: center; /* Center align the navbar content */
+    backdrop-filter: blur(10px); /* Add backdrop-filter with the desired blur radius */
+    background-color: rgba(0, 0, 0, 0.0);
+    height: 70px;
+}
+#navbar-right {
+    display: inline-block; /* Change from float to inline-block */
+    margin-top: 10px; /* Add margin to align the content vertically */
+}
+
+#navbar-right a {
+    margin: 0 20px; /* Add horizontal margin between navbar items */
+}
+
+#navbar a {
+    float: left;
+    color: burlywood;
+    text-align: left;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 20px;
+    border-radius: 4px;
+    font-family: serif;
+    margin-left: 20px;
+    transition: 0.5s ease; /* Add a smooth transition effect */
+}
+
+#navbar a:hover {
+    color: white; /* Change the text color to white on hover */
+}
+
+
+ .logo img{
+    height: 120px;
+    margin-left: 30px;
+    margin-top: -75px;
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+    width:110px;
+    
+}
+ i {
+margin-left: 1090px;
+position: absolute;
+margin-top: -45px;
+font-size: 30px;
+display: flex;
+
+}
+.Email{
+margin-left: 150px;
+position: absolute;
+}
+
+.Cart{
+margin-left: 230px;
+}
+
+.Login{
+margin-left: 320px;
+position: absolute;
+
+}
+.Hover-link i{
+margin-left: -280px;
+position: absolute;
+margin-top: -40px;
+
+}
+
+
+
+
+
+#search-bar {
+    display: none;
+    float: right;
+    margin-right: 20px;
+}
+
+#search-bar input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+#search-bar button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+</style>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Style for the search bar container */
+        body {
+        height: 700px;
+        background-color: black;
+        background-image: linear-gradient(goldenrod);
+        color: #fff;
+}
+
+        /* Style for the search bar container */
+        .search-container {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin-top: 160px;
+            width: 280px;
+            margin-left: 100px;
+            border: 1px solid white;
+                        
+            
+        }
+
+        /* Style for the search input field */
+        .search-input {
+            border: none;
+            width: 200px;
+            padding: 10px;
+            border-radius: 2px;
+            outline: none;
+            font-size: 20px;
+
+        }
+
+        /* Style for the search button */
+        .search-button {
+            background-color:burlywood;
+            color:black;
+            border: none;
+            padding: 14px 10px;
+            border-radius: 2px;
+            cursor: pointer;
+
+
+        }
+
+        .point h1{
+            font-size: 1px;
+            border: ridge;
+            width: 400px;
+            height: 1200px;
+            margin-top: 50px;
+            margin-left: 50px;
+            border-radius: 20px;
+            border-width: 2px;
+            border-radius: 5px;
+            border-color: brown;
+            position: absolute;
+        }
+        .point h2{
+            margin-top: 100px;
+            font-size: 30px;
+            font-weight: 200;
+            font-family: serif;
+            text-decoration: underline;
+            color: burlywood;
+            margin-left: 100px;
+            text-decoration-thickness: 1px;
+            position: absolute;
+        }
+       .Candle12{
+        font-size: 25px;
+        text-decoration: none;
+        color: #fff;
+        margin-top: 150px;
+        position: absolute;
+        margin-left:100px;
+        font-family: serif;    
+    }
+        .Flow1{
+        font-size: 25px;
+        text-decoration: none;
+        color: #fff;
+        margin-top: 170px;
+        position: absolute;
+        margin-left:100px;
+        font-family:serif;    
+    }
+        .Han1{
+        font-size: 25px;
+        text-decoration: none;
+        color: #fff;
+        margin-top: 190px;
+        position: absolute;
+        margin-left:100px;
+        font-family: serif;
+        }
+
+        .Out1{
+        font-size: 25px;
+        text-decoration: none;
+        color: #fff;
+        margin-top: 210px;
+        position: absolute;
+        margin-left:100px;
+        font-family: serif;    
+    }
+
+        .Pic1{
+        font-size: 25px;
+        text-decoration: none;
+        color: #fff;
+        margin-top: 230px;
+        position: absolute;
+        margin-left:100px;
+        font-family: serif;    
+    }
+
+        .Pic2 {
+        font-size: 25px;
+        text-decoration: none;
+        color: #fff;
+        margin-top: 250px;
+        position: absolute;
+        margin-left:100px;
+        font-family: serif;
+        }
+
+        .Pic3{
+        font-size: 25px;
+        text-decoration: none;
+        color: #fff;
+        margin-top: 270px;
+        position: absolute;
+        margin-left:100px;
+        font-family: serif;
+        }
+
+       .product a:hover{
+        color: goldenrod;
+        transition: 0.5s ease;
+        }
+       .Seller{
+        font-size: 27px;
+        font-weight: 200;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        color: burlywood;
+        margin-top: 100px;
+        margin-left: 100px;    
+    }
+
+    .Pic5{
+        position: absolute;
+        margin-top: 100px;
+
+    }
+       
+    .Furniture a:hover{
+        color: goldenrod;
+        transition: 0.5s ease;
+
+       }   
+
+    .Furniture h1{
+     margin-left: 100px;
+     font-size: 30px;
+     font-weight: 200;   
+     text-decoration: underline;
+     text-decoration-thickness:1px;
+     color: burlywood;   
+     font-family: serif;   
+     position: absolute;   
+     margin-top: 350px;   
+    }   
+
+   .Candle1{
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 100px;
+    position: absolute;
+    color: #fff;
+    margin-top: 390px;
+    font-family: serif;
+    
+   }
+   
+   .Ceiling2{
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 100px;
+    position: absolute;
+    color: #fff;
+    margin-top:410px;
+    font-family: serif;
+    
+   }
+   .Flow3{
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 100px;
+    position: absolute;
+    color: #fff;
+    margin-top: 430px;
+    font-family: serif;    
+   }
+   .Han4{
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 100px;
+    position: absolute;
+    color: #fff;
+    margin-top: 450px;
+    font-family: serif;
+}
+   
+    .Pic5{
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 100px;
+    position: absolute;
+    color: #fff;
+    margin-top: 470px;
+    font-family: serif;
+    }
+   .Pic6{
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 100px;
+    position: absolute;
+    color: #fff;
+    margin-top: 490px;
+    font-family: serif;
+    }
+   
+</style>
+
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Find product...">
+        <button type="submit" class="search-button">Search</button>
+    </div>
+ <div class="point">
+     <h1>.</h1>   
+     <h2>Lights</h2>      
+</div>
+<div class="product">
+    <a class="Candle12" href="#">Ceiling Chandliers  </a>   
+    <br> <a class="Flow1"href="http://127.0.0.1:8000/Lamp1">Floor Lamps </a>
+    <br> <a class="Han1" href="http://127.0.0.1:8000/Hang1">Hanging     </a>   
+    <br> <a class="Out1" href="http://127.0.0.1:8000/Out1">Outdoor lights</a>   
+    <br> <a class="Pic1" href="http://127.0.0.1:8000/Pic1">Picture Lights</a>   
+    <br> <a class="Pic2" href="http://127.0.0.1:8000/Wall1">Wall Lamps   </a>   
+    <br> <a class="Pic3" href="http://127.0.0.1:8000/Tasks1">Tasks Lighting</a>   
+</div>
+<div class="Furniture">
+<h1>Furniture</h1>
+    <a class="Candle1" href="http://127.0.0.1:8000/Bed1">Beds</a>   
+    <br> <a class="Ceiling2" href="http://127.0.0.1:8000/Chair1">Chairs</a>   
+    <br> <a class="Flow3" href="http://127.0.0.1:8000/Stool1">Moulded Stool</a>
+    <br> <a class="Han4" href="http://127.0.0.1:8000/Swing1">Garden Swing</a>   
+    <br> <a class="Pic5" href="http://127.0.0.1:8000/Table1">Tables</a>   
+    <br> <a class="Pic6" href="http://127.0.0.1:8000/Crouch1">Crouches</a>   
+       
+
+</div>
+    
+<style>
+    /* Style for the container of the dropdown */
+    .Fill{
+        color: burlywood;
+        font-size: 26px;
+        font-weight: 100;
+        margin-top: 650px;
+        text-decoration: underline;
+        text-decoration-thickness:1px ;
+        margin-left: 100px;
+        position: absolute;
+        font-family: serif;
+    }
+    
+    
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-top: 500px;
+        position: absolute;
+    }
+
+
+    /* Style for the dropdown button */
+    .dropdown-button {
+        background-color:burlywood;
+        color:black;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 19px;
+        margin-left: 100px;
+        width: 190px;
+        position: absolute;
+        margin-top: 200px;
+    }
+
+    /* Style for the dropdown content */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: black;
+        min-width: 190px;
+        box-shadow: 0px 8px 16px 0px white;
+        z-index: 1;
+        height: 200px;
+        margin-left: 100px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: 240px;
+    }
+    
+    /* Style for the dropdown items */
+    .dropdown-item {
+        padding: 10px;
+        text-decoration: none;
+        display: block;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* Hover effect for the dropdown items */
+    .dropdown-item:hover {
+        background-color: burlywood;
+        color: #333;
+        transition: 0.5s ease;
+    }
+
+    /* Show the dropdown content when the button is hovered over */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+</head>
+<body>
+<h1 class="Fill">Filter-price</h1>
+
+<!-- Dropdown container -->
+<div class="dropdown">
+    <!-- Dropdown button -->
+    <button class="dropdown-button">Select Price</button>
+
+    <!-- Dropdown content -->
+    <div class="dropdown-content">
+        <a href="http://127.0.0.1:8000/Floor1" class="dropdown-item">.100-500</a>
+        <a href="http://127.0.0.1:8000/Floor2" class="dropdown-item">.500-1000</a>
+        <a href="http://127.0.0.1:8000/Floor3" class="dropdown-item">.1000-1500</a>
+        <a href="http://127.0.0.1:8000/Floor4" class="dropdown-item">.1500-2000</a>
+    </div>
+</div>
+
+<div class="Page">
+    <h1>.</h1>
+   
+</div>
+
+
+<div class="Page">
+    <img src="{% static 'images/Royale.jpg' %}" alt="">
+    <h1>.</h1>
+    <h2>Floor Lamps</h2>
+</div>
+
+
+
+<style>
+
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the dropdown button */
+.dropdown-button1 {
+    background-color:brown;
+    color:black;
+    border: none;
+    padding: 15px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 19px;
+    margin-left: 1200px;
+    width: 200px;
+    margin-top: -380px;
+    position: absolute;
+}
+
+/* Style for the dropdown content */
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 190px;
+    box-shadow: 0px 8px 16px 0px white;
+    z-index: 1;
+    height: 280px;
+    margin-left: 1205px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: -330px;
+     
+}
+
+/* Style for the dropdown items */
+.dropdown-item2 {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 0px;
+
+}
+
+/* Hover effect for the dropdown items */
+.dropdown-item2:hover {
+    background-color: brown;
+    color:goldenrod;
+    transition: 0.5s ease;
+    margin-top: 0px;
+    border-radius: 2px;
+    
+}
+.load{
+margin-top: -905px;
+margin-left:1050px;
+position: absolute;
+text-decoration: none;
+border: ridge;
+padding: 10px 10px;
+font-size: 20px;
+background-color: brown;
+border:brown;
+border-radius: 5px;
+color: black;
+}
+
+
+.load:hover{
+background-color: black;
+color: brown;
+transition: 0.5s ease;
+
+}
+/* Show the dropdown content when the button is hovered over */
+.dropdown1:hover .dropdown-content1 {
+    display: block;
+}
+</style>
+</head>
+<body>
+
+<!-- Dropdown container -->
+
+<style>
+.Page img{
+margin-left:800px;
+margin-top: -50px;
+position: absolute;
+width: 400px;
+height: 500px;
+}
+
+.Page h1{
+margin-left: 500px;
+width: 1000px;
+height: 1190px;
+margin-top: -950px;
+position: absolute;
+background-color:rgba(0, 0, 0, 0.8);
+font-size: 1px;
+
+}
+
+.Page h2{
+position:absolute;
+margin-left: 550px;
+margin-top: -290px;
+font-size: 50px;
+font-weight: 100;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: black;
+border: dashed;
+width: 800px;
+padding: 60px 99px;
+background-color: burlywood;
+border-radius: 5px;
+
+}
+.Sparks {
+width: 50px;
+height: 50px;
+margin-top: -300px;
+margin-left: -100px;
+position: absolute;
+}
+
+
+.Candle img{
+height: 80px;
+width: 80px;
+margin-top: -900px;
+position: absolute;
+margin-left: 520px;
+border-radius: 20px;
+box-shadow: 0px 0px 5px black;
+}
+</style>
+
+</head>
+</html>   
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="list">
+            <div class="item">
+                <div class="img">
+                    <img src="{% static 'images/Floor2.webp' %}">
+                </div>
+                <div class="content">
+                    <div class="title">Pillar</div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Repellendus, minus.
+                    </div>
+                    <div class="price">100/-</div>
+                    <a href="#">add to cart</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{% static 'images/Floor3.jpg' %}">
+                </div>
+                <div class="content">
+                    <div class="title">Tower</div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Repellendus, minus.
+                    </div>
+                    <div class="price">100/-</div>
+                    <a href="#">add to cart</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{% static 'images/Floor4.Avif' %}">
+                </div>
+                <div class="content">
+                    <div class="title">Night Lamp</div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Repellendus, minus.
+                    </div>
+                    <div class="price">100/-</div>
+                    <a href="#">add to cart</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{% static 'images/Floor6.jpg' %}">
+                </div>
+                <div class="content">
+                    <div class="title">DreamMoon</div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Repellendus, minus.
+                    </div>
+                    <div class="price">200/-</div>
+                    <a href="#">add to cart</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{% static 'images/Floor7.Webp' %}">
+                </div>
+                <div class="content">
+                    <div class="title">Skylight</div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Repellendus, minus.
+                    </div>
+                    <div class="price">150/-</div>
+                    <a href="#">add to cart</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{% static 'images/Floor8.jpg' %}">
+                </div>
+                <div class="content">
+                    <div class="title">Tree Light</div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Repellendus, minus.
+                    </div>
+                    <div class="price">200/-</div>
+                    <a href="#">add to cart</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{% static 'images/Floor9.jpg' %}">
+                </div>
+                <div class="content">
+                    <div class="title">Product name 7</div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Repellendus, minus.
+                    </div>
+                    <div class="price">20,000/-</div>
+                    <a href="#">add to cart</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{% static 'images/Floor10.jpg' %}">
+                </div>
+                <div class="content">
+                    <div class="title">Raibow bar</div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Repellendus, minus.
+                    </div>
+                    <div class="price">300/-</div>
+                    <a href="#">add to cart</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{% static 'images/Floor11.jpg' %}">
+                </div>
+                <div class="content">
+                    <div class="title">light high</div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Repellendus, minus.
+                    </div>
+                    <div class="price">350/-</div>
+                    <a href="#">add to cart</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{% static 'images/Floor13.webp' %}">
+                </div>
+                <div class="content">
+                    <div class="title">Blue Ocean</div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Repellendus, minus.
+                    </div>
+                    <div class="price">350/-</div>
+                    <a href="#">add to cart</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{% static 'images/Floor14.jpg' %}">
+                </div>
+                <div class="content">
+                    <div class="title">Dream Girl</div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Repellendus, minus.
+                    </div>
+                    <div class="price">550/-</div>
+                    <a href="#">add to cart</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{% static 'images/Floor15.jpg' %}">
+                </div>
+                <div class="content">
+                    <div class="title">Ice-Bar</div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Repellendus, minus.
+                    </div>
+                    <div class="price">600/-</div>
+                    <a href="#">add to cart</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{% static 'images/Floor16.jpg' %}">
+                </div>
+                <div class="content">
+                    <div class="title">BlackTree</div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Repellendus, minus.
+                    </div>
+                    <div class="price">400/-</div>
+                    <a href="#">add to cart</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{% static 'images/Floor17.jpg' %}">
+
+                </div>
+                <div class="content">
+                    <div class="title">three Cats</div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Repellendus, minus.
+                    </div>
+                    <div class="price">750/-</div>
+                    <a href="#">add to cart</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{% static 'images/CC26.jpeg' %}">
+                </div>
+                <div class="content">
+                    <div class="title">Ice age</div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Repellendus, minus.
+                    </div>
+                    <div class="price">750/-</div>
+                    <a href="#">add to cart</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img">
+                    <img src="{% static 'images/Floor21.jpg' %}">
+                </div>
+                <div class="content">
+                    <div class="title">Peacock</div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Repellendus, minus.
+                    </div>
+                    <div class="price">850/-</div>
+                    <a href="#">add to cart</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img">
+                    <img src="{% static 'images/Floor19.jpg' %}">
+                </div>
+                <div class="content">
+                    <div class="title">Snake Night</div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Repellendus, minus.
+                    </div>
+                    <div class="price">700/-</div>
+                    <a href="#">add to cart</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img">
+                    <img src="{% static 'images/Floor18.jpg' %}">
+                </div>
+                <div class="content">
+                    <div class="title">Rabit</div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Repellendus, minus.
+                    </div>
+                    <div class="price">900/-</div>
+                    <a href="#">add to cart</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="img">
+                    <img src="{% static 'images/Floor8.jpg' %}">
+                </div>
+                <div class="content">
+                    <div class="title">Three world</div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Repellendus, minus.
+                    </div>
+                    <div class="price">500/-</div>
+                    <a href="#">add to cart</a>
+                </div>
+            </div>
+            
+
+        </div>
+        <ul class="listPage">
+           
+        </ul>
+    </div>
+    
+    <script src="script.js"></script>
+
+<style>
+    body{
+            background-image: linear-gradient(to top right,
+                black,black
+            );
+            min-height: 100vh;
+            line-height: 20px;
+            font-family: serif;
+        
+        }
+        .container{
+            width:900px;
+            margin-top: -50px;
+            position: absolute;
+            margin-left: 550px;
+        
+        }
+        
+        
+        .list{
+            display: grid;
+            grid-template-columns: 300px 300px 300px;
+            column-gap: 30px;
+            row-gap:30px
+        }
+        .item  img{
+            height:200px;
+            width: 200px;
+            transition: 0.5s;
+            border-radius: 20px;
+            box-shadow: 0px 0px 5px white;
+            margin-top: 30px;
+        }
+        .item .img{
+            background-image: linear-gradient(to top right,
+                burlywood, burlywood
+                );
+            padding:20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            width: 220px;
+            height: 200px;
+            box-shadow: 0px 0px 2px white;
+        
+        }   
+        .item .content{
+            background-color: #ffffff24;
+            border-radius: 10px;
+            padding:20px 10px;
+            transform: translate(0,-50px);
+            backdrop-filter: blur(100px);
+            color:black;
+            width: 220px;
+            height: 200px;
+            margin-top: -20px;
+            box-shadow: 0px 0px 5px white;
+        
+        }
+        .title{
+            font-size: xx-large;
+            color: brown;
+            font-family: serif;
+        }
+        .item .content .des{
+            opacity: .9;
+            margin:10px 0;
+            color: #ccc;
+            font-family: serif;
+        }
+        .item .content .price{
+            font-size: large;
+            letter-spacing: 3px;
+            margin-bottom:10px;
+            color: aqua;
+        }
+        .item .content a{
+            background-color: brown;
+            padding:10px;
+            color:burlywood;
+            width:100px;
+            border:none;
+            border-radius: 7px;
+            margin-left: 45px;
+            margin-top: -5px;
+            position: absolute;
+            font-size: 15px;
+            text-decoration: none;
+            font-family: serif;
+        }
+        .item:hover img{
+            transform: translate(0,-50px);
+            
+        }
+        .listPage{
+            padding:10px;
+            text-align: center;
+            list-style: none;
+        }
+        .listPage li{
+            background-color: burlywood;
+            padding:20px;
+            display: inline-block;
+            margin:0 10px;
+            cursor: pointer;
+            border-radius: 600px;
+        }
+        .listPage .active{
+            background-color: brown;
+            color:#fff;
+        }
+        
+        .listPage li:hover{
+            background-color: black;
+            border: groove;
+        
+        
+        }
+        
+        
+        </style>
+        <script>
+let thisPage = 1;
+let limit = 6;
+let list = document.querySelectorAll('.list .item');
+
+function loadItem(){
+    let beginGet = limit * (thisPage - 1);
+    let endGet = limit * thisPage - 1;
+    list.forEach((item, key)=>{
+        if(key >= beginGet && key <= endGet){
+            item.style.display = 'block';
+        }else{
+            item.style.display = 'none';
+        }
+    })
+    listPage();
+}
+loadItem();
+function listPage(){
+    let count = Math.ceil(list.length / limit);
+    document.querySelector('.listPage').innerHTML = '';
+
+    if(thisPage != 1){
+        let prev = document.createElement('li');
+        prev.innerText = 'PREV';
+        prev.setAttribute('onclick', "changePage(" + (thisPage - 1) + ")");
+        document.querySelector('.listPage').appendChild(prev);
+    }
+
+    for(i = 1; i <= count; i++){
+        let newPage = document.createElement('li');
+        newPage.innerText = i;
+        if(i == thisPage){
+            newPage.classList.add('active');
+        }
+        newPage.setAttribute('onclick', "changePage(" + i + ")");
+        document.querySelector('.listPage').appendChild(newPage);
+    }
+
+    if(thisPage != count){
+        let next = document.createElement('li');
+        next.innerText = 'NEXT';
+        next.setAttribute('onclick', "changePage(" + (thisPage + 1) + ")");
+        document.querySelector('.listPage').appendChild(next);
+    }
+}
+function changePage(i){
+    thisPage = i;
+    loadItem();
+}
+</script>
+<div class="card1">
+    <div class="imgbox">
+        <img src="{% static 'images/Floor8.jpg' %}" alt="">
+    </div>
+
+    <div class="content1">
+      <h2>keep Smiling</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+        doloribus vitae fugit enim repudiandae
+      </p>
+      <a href="#">Go To cart</a>
+    </div>
+</div>
+  <style>
+.card1 {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(100, 80, 50, 0.9);
+    transition: 0.3s;
+    padding: 30px 50px;
+    background: rgba(204,167,111,0.9);
+    cursor: pointer;
+    margin-right: 30px;
+    margin-top: 1450px;
+    margin-left: 70px;
+
+
+}
+
+  
+  .card1:hover {
+    height: 220px;
+  }
+  
+  .imgbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-80px);
+    z-index: 99;
+  }
+  
+   .imgbox img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    margin-top: -40px;
+}
+.imgbox img:hover{
+    transform: rotate(720deg);
+    transition: 0.5s ease;
+
+}
+
+
+  .content1 {
+    padding: 10px 20px;
+    text-align: center;
+    transform: translateY(-450px);
+    opacity: 0;
+    transition: 0.3s;
+    margin-top: 40px;     
+    position: absolute;
+    font-family: serif;
+    margin-left: -30px;
+    
+}
+.content1 a{
+border-radius: 10px;
+background-color: brown;
+color: #fff;
+padding: 10px 10px;
+text-decoration: none;
+box-shadow: 0px 0px 5px white;
+font-family: serif;
+font-size: 15px;
+margin-top: 8px;
+position: absolute;
+margin-left: -60px;
+}
+  
+
+
+
+  .card1:hover > .content1 {
+    opacity: 1;
+    transform: translateY(-180px);
+  }
+  
+  .content1 h2 {
+    color: brown;
+    font-family: serif;
+    margin-top: 10px;
+}
+ .content1 p{
+font-family: serif;
+font-size: 20px;
+ }
+  
+  </style>
+  
+  
+<div class="card2">
+    <div class="imgbox">
+        <img src="{% static 'images/Floor3.jpg' %}" alt="">
+    </div>
+
+    <div class="content2">
+      <h2>keep Smiling</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+        doloribus vitae fugit enim repudiandae
+      </p>
+      <a href="#">Go to Cart</a>
+    </div>
+</div>
+  <style>
+  .card2 {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(100, 80, 50, 0.9);
+    transition: 0.3s;
+    padding: 30px 50px;
+    background: rgba(204,167,111,0.9);
+    cursor: pointer;
+    margin-right: 30px;
+    margin-top: 1450px;
+    margin-left: 450px;
+
+
+}
+
+  
+  .card2:hover {
+    height: 220px;
+  }
+  
+  .imgbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-80px);
+    z-index: 99;
+  }
+  
+   .imgbox img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    margin-top: -40px;
+}
+.imgbox img:hover{
+    transform: rotate(720deg);
+    transition: 0.5s ease;
+
+}
+
+
+  .content2 {
+    padding: 10px 20px;
+    text-align: center;
+    transform: translateY(-450px);
+    opacity: 0;
+    transition: 0.3s;
+    margin-top: 40px;     
+    position: absolute;
+    font-family: serif;
+    margin-left: -30px;
+    
+}
+.content2 a{
+border-radius: 10px;
+background-color: brown;
+color: #fff;
+padding: 10px 10px;
+text-decoration: none;
+box-shadow: 0px 0px 5px white;
+font-family: serif;
+font-size: 15px;
+margin-top: 8px;
+position: absolute;
+margin-left: -60px;
+}
+  
+
+
+
+  .card2:hover > .content2 {
+    opacity: 1;
+    transform: translateY(-180px);
+  }
+  
+  .content2 h2 {
+    color: brown;
+    font-family: serif;
+    margin-top: 10px;
+}
+ .content2 p{
+font-family: serif;
+font-size: 20px;
+ }
+  
+  </style>
+  
+  </style>
+
+<div class="card3">
+    <div class="imgbox">
+        <img src="{% static 'images/Floor13.Webp' %}" alt="">  
+    </div>
+
+    <div class="content3">
+      <h2>keep Smiling</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+        doloribus vitae fugit enim repudiandae
+      </p>
+      <a href="#">Go to Cart</a>
+    </div>
+</div>
+  <style>
+  .card3 {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(100, 80, 50, 0.9);
+    transition: 0.3s;
+    padding: 30px 50px;
+    background: rgba(204,167,111,0.9);
+    cursor: pointer;
+    margin-right: 30px;
+    margin-top: 1450px;
+    margin-left: 830px;
+
+
+}
+
+  
+  .card3:hover {
+    height: 220px;
+  }
+  
+  .imgbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-80px);
+    z-index: 99;
+  }
+  
+   .imgbox img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    margin-top: -40px;
+}
+.imgbox img:hover{
+    transform: rotate(720deg);
+    transition: 0.5s ease;
+
+}
+
+
+  .content3 {
+    padding: 10px 20px;
+    text-align: center;
+    transform: translateY(-450px);
+    opacity: 0;
+    transition: 0.3s;
+    margin-top: 40px;     
+    position: absolute;
+    font-family: serif;
+    margin-left: -30px;
+    
+}
+.content3 a{
+border-radius: 10px;
+background-color: brown;
+color: #fff;
+padding: 10px 10px;
+text-decoration: none;
+box-shadow: 0px 0px 5px white;
+font-family: serif;
+font-size: 15px;
+margin-top: 8px;
+position: absolute;
+margin-left: -60px;
+}
+  
+
+
+
+  .card3:hover > .content3 {
+    opacity: 1;
+    transform: translateY(-180px);
+  }
+  
+  .content3 h2 {
+    color: brown;
+    font-family: serif;
+    margin-top: 10px;
+}
+ .content3 p{
+font-family: serif;
+font-size: 20px;
+ }
+  
+  </style>
+
+  </style>
+<div class="card4">
+    <div class="imgbox">
+        <img src="{% static 'images/Floor16.jpg' %}" alt="">  
+    </div>
+
+<div class="content4">
+    <h2>keep Smiling</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+      doloribus vitae fugit enim repudiandae
+    </p>
+    <a href="#">Go to Cart</a>
+</div>
+</div>
+<style>
+.card4 {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(204, 167, 111, 0.9);
+  transition: 0.3s;
+  padding: 30px 50px;
+  background: rgba(204, 167, 111, 0.9);
+  cursor: pointer;
+  margin-right: 30px;
+  margin-top: 1450px;
+  margin-left: 1200px;
+}
+
+.card4:hover {
+  height: 220px;
+}
+
+.imgbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-80px);
+  z-index: 99;
+}
+
+ .imgbox img {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.content4 {
+    padding: 10px 20px;
+    text-align: center;
+    transform: translateY(-450px);
+    opacity: 0;
+    transition: 0.3s;
+    margin-top: 40px;     
+    position: absolute;
+    font-family: serif;
+    margin-left: -30px;
+    
+}
+.content4 a{
+border-radius: 10px;
+background-color: brown;
+color: #fff;
+padding: 10px 10px;
+text-decoration: none;
+box-shadow: 0px 0px 5px white;
+font-family: serif;
+font-size: 15px;
+margin-top: 8px;
+position: absolute;
+margin-left: -60px;
+}
+  
+
+
+
+  .card4:hover > .content4 {
+    opacity: 1;
+    transform: translateY(-180px);
+  }
+  
+  .content4 h2 {
+    color: brown;
+    font-family: serif;
+    margin-top: 10px;
+}
+ .content4 p{
+font-family: serif;
+font-size: 20px;
+ }
+.Best h1{
+margin-top: 1200px;
+position: absolute;
+margin-left: 650px;
+font-weight: 100;
+font-family: serif;
+}
+.Best p{
+font-size: 25px;
+margin-top: 1250px;
+position: absolute;
+margin-left: 300px;
+font-family: serif;
+}
+
+</style>
+<div class="Best">
+<h1>Our Best Seller</h1>
+<p>These models are very demadable in a market.And we sold many Chandliers to customers<br>
+</p>
+</div>
+
+<div class="Footer">
+    <h1>.</h1>  
+    <a href="#"><img src="{% static 'images/Royale.jpg' %}" alt=""></a>      
+     
+  </div>
+  
+  <div class="Eng">
+  <h1>Enquires</h1>
+  <p>For More Details and Enquires:<br>Login to www.RoyalFurniture.com<br>TheRoyaleFurniture@gmail.com<br>+91 8949167574,+91 9694140058</p>
+  <h5 class="open">Bussiness Hours<br>Open Timeing 10:30AM to 8:30PM<br>all day Open</h5>
+  
+  </div>
+  
+  <style>
+  .Eng h1{
+  
+  margin-top: 1850px;
+  position: absolute;
+  color: goldenrod;
+  margin-left: 250px;
+  text-decoration: underline;
+  text-decoration-thickness:0.3px;
+  position: absolute;  
+  font-family: serif;  
+}
+  
+  .Eng p{
+  margin-top: 1900px;
+  position: absolute;
+  margin-left: 250px;
+  font-size: 23px;
+  font-family: serif;
+  }
+  .open{
+  margin-top: 2050px;
+  position: absolute;
+  margin-left:250px;
+  font-size: 23px;
+  font-weight: 300;
+  font-family: serif;
+  }
+  
+  .Import {
+  margin-top: 1850px;
+  position: absolute;    
+  font-size: 28px;
+  color:goldenrod;
+  margin-left: 750px;
+  text-decoration: underline;
+  text-decoration-thickness: 0.2px;
+  font-family: serif;
+  }
+  
+  .Prod{
+  margin-top: 1850px;
+  position: absolute;    
+  font-size: 28px;
+  color:goldenrod;
+  margin-left: 1000px;
+  text-decoration: underline;
+  text-decoration-thickness: 0.2px;
+  font-family: serif ;
+  }
+  .Add{
+  margin-top: 1850px;
+  position: absolute;    
+  font-size: 28px;
+  color:goldenrod;
+  margin-left: 1300px;
+  text-decoration: underline;
+  text-decoration-thickness: 0.2px;
+  font-family: serif;
+  }
+
+  .Footer h1{
+margin-top: 250px;
+width: 1585px;
+height: 630px;
+margin-left: -10px;
+font-size: 1px;
+background-color: rgba(48, 29, 7, 0.9);
+border-top-right-radius: 100px;
+border-top-left-radius: 100px;
+position: absolute;
+}
+
+.Footer img{
+margin-top: 300px;
+position: absolute;
+width: 100px;
+height: 100px;
+border-radius: 50px;
+margin-left: 50px;
+box-shadow: 0px 7px 5px brown;
+ 
+}
+.Footer{
+margin-top:1550px;
+position: absolute;
+margin-left: 10px;
+}
+
+  
+  
+  
+  
+  
+  </style>
+  <div class="Footer1">
+  <h1 class="Import">Important</h1>
+  <h1 class="Prod">Products</h1>
+  <h1 class="Add">Address</h1>
+  </div>
+  
+  <div class="Import1">
+  <a class="Home" href="http://127.0.0.1:8000/">Home</a>
+  <a class="Class"href="http://127.0.0.1:8000/AboutUS">Aboutus</a>
+  <a class="About"href="#">Light</a>
+  <a class="Lightss"href="#">Furniture</a>
+  <a class="Con"href="#">Contact</a>
+  <a class="Sign"href="#">Signin</a>
+  </div>
+  
+  <style>
+  .Home{
+  margin-top: 1890px;
+  position: absolute;
+  margin-left: 780px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  }
+  .Class{
+  margin-top: 1920px;
+  position: absolute;
+  margin-left: 780px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;  
+}
+  .About{
+  margin-top: 1950px;
+  position: absolute;
+  margin-left: 780px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;  
+}
+  
+  .Lightss{
+  margin-top: 1980px;
+  position: absolute;
+  margin-left: 780px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  }
+  
+  .Con{
+  margin-top: 2010px;
+  position: absolute;
+  margin-left: 780px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  }
+  
+  
+  .Sign{
+  margin-top: 2040px;
+  position: absolute;
+  margin-left: 780px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  }
+  .Import1 a:hover{
+  color: goldenrod;
+  transition: 0.5s ease;
+  }
+  .Import1 a{
+  font-size: 23px;
+  }
+  
+  </style>
+  <div class="Pro">
+      <a class="Bed1" href="#">Beds</a>
+      <a class="Chair"href="#">Chairs</a>
+      <a class="Bulb"href="#">Light</a>
+      <a class="Candle"href="#">Candliers</a>
+      <a class="Lamp23"href="#">Lamps</a>
+      <a class="Crouh"href="#">Crouches</a>
+      <a class="Out"href="#">Outdoor Lights</a>
+      <a class="Gard"href="#">Gardenlights</a>
+  </div>
+    
+  
+  <style>
+  .Bed1{
+  
+  margin-top: 1890px;
+  position: absolute;
+  margin-left: 1030px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  }
+  
+  .Chair{
+  
+  margin-top: 1920px;
+  position: absolute;
+  margin-left: 1030px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  }
+  
+  .Bulb{
+  
+  margin-top: 1950px;
+  position: absolute;
+  margin-left: 1030px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  }
+  
+  .Candle{
+  
+  margin-top: 1980px;
+  position: absolute;
+  margin-left: 1030px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  
+  }
+  
+  .Lamp23{
+  
+  margin-top: 2010px;
+  position: absolute;
+  margin-left: 1030px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  
+  }
+  
+  .Crouh{
+  
+  margin-top: 2040px;
+  position: absolute;
+  margin-left: 1030px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  }
+  
+  .Out{
+  
+  margin-top: 2070px;
+  position: absolute;
+  margin-left: 1030px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  
+  }
+  
+  .Gard{
+  
+  margin-top: 2100px;
+  position: absolute;
+  margin-left: 1030px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  
+  }
+  
+ .Pro a{
+  font-size: 23px;
+  
+}
+  
+  .Pro a:hover{
+  color: goldenrod;
+  transition: 0.5s ease;
+  }
+  .Showroom p{
+  margin-top: 1890px;
+  position: absolute;
+  margin-left: 1280px;
+  font-size: 23px;
+  font-family: serif;
+  }
+  .Showroom .Pin{
+  margin-top: 2050px;
+  position: absolute;
+  font-family: serif;  
+}
+  .Log{
+  position: absolute;
+  margin-top: 2150px;
+  margin-left: 1270px;
+  font-size: 35px;
+  text-decoration: none;
+  color: goldenrod;
+  border: ridge;
+  border-radius:150px;
+  padding: 10px 25px;
+  background-color: black;
+  font-family: serif;  
+}
+  .Log:hover{
+  padding: 10px 30px;
+  }
+  .Showroom{
+    margin-top: 0px;
+
+  }
+  </style>
+  <div class="Showroom">
+  <p>Showroom Address:<br>Royal furniture private Ltd<br>Bhagwan talkies near<br> SRK mall Agra</p>
+  <p class="Pin"> Pincode:-328024</p>
+  <a class="Log" href="#">Login</a>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  </style>
+ 
+  
+  
+  
+  </style>
+  <script>
+    // Function to handle search input
+    function handleSearch() {
+        // Get the search input value
+        let searchInput = document.querySelector('.search-input').value.toLowerCase();
+  
+        // Filter items based on the search input
+        list.forEach(item => {
+            let title = item.querySelector('.title').innerText.toLowerCase();
+            let description = item.querySelector('.des').innerText.toLowerCase();
+  
+            if (title.includes(searchInput) || description.includes(searchInput)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+  
+        // Update pagination
+        listPage();
+    }
+  
+    // Add event listener for search input
+    document.querySelector('.search-input').addEventListener('input', handleSearch);
+  </script>
+  <button id="scrollToTopBtn" onclick="scrollToTop()">Scroll to Top</button>
+
+  <style>
+    #scrollToTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px;
+      background-color:burlywood;
+      color: black;
+      border: ridge;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: 400;
+      border-color: black;
+  }
+    
+    #scrollToTopBtn:hover {
+      background-color: black;
+      color: burlywood;
+      transition: 0.5s ease;
+      border-color: gold;
+  }
+    
+    
+    </style>
+        
+    <script>
+    // Function to scroll back to the top of the page smoothly
+    function scrollToTop() {
+      // Scroll to the top of the page using the `scrollTo` method
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Adds smooth scrolling effect
+      });
+    }
+    
+    // Attach a scroll event listener to the window
+    window.addEventListener('scroll', function() {
+      var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+      
+      // Show the button when the user has scrolled down 20% of the page height
+      if (document.body.scrollTop > window.innerHeight * 0.2 || document.documentElement.scrollTop > window.innerHeight * 0.2) {
+        scrollToTopBtn.style.display = 'block';
+      } else {
+        scrollToTopBtn.style.display = 'none';
+      }
+    });
+    </script>
+
+    

@@ -1,0 +1,2079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swastrade</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/infinite.jpg' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Media.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Home.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="navbar">
+        <div id="navbar-right">
+            <a href="http://127.0.0.1:8000/">Home</a>
+            <a href="http://127.0.0.1:8000/AboutUS">Aboutus</a>
+            <a href="http://127.0.0.1:8000/Lights1">Shop Now</a>
+            <a href="http://127.0.0.1:8000/Contact">contactUS</a>
+        </div>
+        <div class="logo">
+            <a href="http://127.0.0.1:8000/"><img src="{% static 'images/Royale.jpg' %}" alt=""></a>
+        </div>
+        
+        <div class="Email">
+            <a href="#"></a>
+        </div>
+        
+        <div class="Cart">
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+
+        <div class="Login">
+          <a href="http://127.0.0.1:8000/Login1#"><i class="fa-sharp fa-solid fa-image-portrait"></i></a>  
+        </div>
+        <a class="Hover-link" href="#"><i class="fa-solid fa-bars"></i></a>
+    </div>
+</body>
+</html>
+
+<style>
+body {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: black;
+    background-image: linear-gradient(goldenrod);
+    color: #fff;
+    font-family:serif;
+    overflow-x: hidden;
+      
+  }
+
+
+  
+#navbar {
+    overflow: hidden;
+    background-size: 100%;
+    padding: 10px 10px;
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    text-align: center; /* Center align the navbar content */
+    backdrop-filter: blur(10px); /* Add backdrop-filter with the desired blur radius */
+    background-color: rgba(0, 0, 0, 0.0);
+    height: 100px;
+}
+#navbar-right {
+    display: inline-block; /* Change from float to inline-block */
+    margin-top: 10px; /* Add margin to align the content vertically */
+}
+
+#navbar-right a {
+    margin: 0 20px; /* Add horizontal margin between navbar items */
+}
+
+#navbar a {
+    float: left;
+    color: burlywood;
+    text-align: left;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 20px;
+    border-radius: 4px;
+    font-family: serif;
+    margin-left: 20px;
+    transition: 0.5s ease; /* Add a smooth transition effect */
+}
+
+#navbar a:hover {
+    color: white; /* Change the text color to white on hover */
+}
+
+
+ .logo img{
+    height: 120px;
+    margin-left: 30px;
+    margin-top: -75px;
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+    width:110px;
+    
+}
+ i {
+margin-left: 1090px;
+position: absolute;
+margin-top: -45px;
+font-size: 30px;
+display: flex;
+
+}
+.Email{
+margin-left: 150px;
+position: absolute;
+}
+
+.Cart{
+margin-left: 230px;
+}
+
+.Login{
+margin-left: 320px;
+position: absolute;
+
+}
+.Hover-link i{
+margin-left: -280px;
+position: absolute;
+margin-top: -40px;
+
+}
+
+</style>
+<div class="Image">
+    <a href="http://127.0.0.1:8000/Crouch1"><img class="Lamp1" src="{% static 'images/modern1.webp' %}" alt=""></a>
+    <a href="http://127.0.0.1:8000/Chair1"><img class="Lamp2" src="{% static 'images/chair222.webp' %}" alt=""></a>
+    <a href="http://127.0.0.1:8000/Lights1"><img class="Lamp3" src="{% static 'images/Funtiture.jpeg' %}" alt=""></a>
+    <img class="Sparks" src="{% static 'images/sparkles.png' %}" alt="">
+    <a href="#scroll-target" onclick="scrollToTarget()">
+        <img class="Scroll" src="{% static 'images/scroll-bar.png' %}" alt="">
+    </a>
+</div>
+
+<style>
+.Lamp1{
+width: 270px;
+height: 450px;
+margin-top: 300px;
+margin-left: 1100px;
+border-radius: 10px;
+box-shadow: 0px 0px 5px white;
+}
+
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.Lamp2{
+width: 270px;
+height: 350px;
+margin-top: 400px;
+margin-left: -600px;
+border-radius: 10px;
+position: absolute;
+box-shadow: 0px 0px 5px white;
+}
+
+.Lamp3{
+
+width: 200px;
+height: 280px;
+margin-top: 470px;
+margin-left: -870px;
+position: absolute;
+border-radius: 10px;
+box-shadow: 0px 0px 5px white;
+}
+
+.Sparks{
+font-size: 20px;
+position: absolute;
+margin-left:-1200px;
+width: 40px;
+height: 40px;
+margin-top: 160px;
+
+}
+.heading h1{
+font-size: 20px;
+font-family: serif;
+font-weight: 100;
+margin-top: -600px;
+margin-left: 230px;
+}
+.heading h2{
+margin-top: 100px;
+font-size: 60px;
+margin-left: 200px;
+font-family: serif;
+}
+.Lights{
+margin-top: 340px;
+margin-left:1150px;
+font-size: 25px;
+color: goldenrod;
+font-family: 'Times New Roman', Times, serif;
+font-family: serif;
+position: absolute;
+}
+.Lamps{
+margin-top: 340px;
+margin-left:830px;
+font-size: 25px;
+color: goldenrod;
+font-family: serif;
+position: absolute;
+}
+.Couch{
+margin-top: 340px;
+margin-left:520px;
+font-size: 25px;
+color: goldenrod;
+font-family: serif;
+position: absolute;
+}
+.Scroll{
+margin-top: 570px;
+margin-left: -1100px;
+position: absolute;
+height: 100px;
+width: 100px;
+
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+
+}
+  ::-webkit-scrollbar-track{
+    background-color:black;
+    width: 1px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: linear-gradient(120deg, rgba(181, 67, 226, 0.7), rgba(14, 104, 96, 0.5), rgba(38, 20, 39, 0.9));
+
+
+  }
+
+
+
+</style>
+
+<div class="heading">
+<h1>Modern high Quality &<br> Compfortable available On Our Stores</h1>
+<h2>Mid century Modish<br> Furniture</h2>
+<h3 class="Lights">Modern Chandliers</h3>
+<h3 class="Lamps">Modern Chair</h3>
+<h3 class="Couch">Modern couch</h3>
+
+</div>
+
+<script>
+    function scrollToTarget() {
+        const target = document.getElementById('scroll-target');
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the target
+        }
+    }
+</script>
+
+<div class="Second">
+<h1>Who we are</h1>
+<p>At Royale Furniture, we are passionate about<br> enhancing your living spaces with style and comfort.<br> We are a dedicated online destination for exquisite furniture<br> and stunning lighting solutions. Our mission is<br> to provide you with a curated selection of modern,<br> mid-century, and contemporary furniture, as well as a wide range of lighting<br> options that elevate the ambiance of your home or office.<br> With a commitment to quality and aesthetics, we offer a unique and diverse<br> collection of products that blend functionality and beauty seamlessly. Whether you're looking to furnish<br> your living room, bedroom, or office space, or simply seeking the perfect lighting to create a warm and inviting atmosphere,<br> [Lions Company] is your go-to source for inspiration and top-notch products. Explore our<br> website and let us help you transform your living spaces into a haven<br> of style and sophistication."
+</p>
+</div>
+
+<style>
+.Second h1{
+margin-left: 700px;
+margin-top: 600px;
+position: absolute;
+font-family: serif;
+}
+
+.Second p{
+font-size: 22px;
+color: goldenrod;
+text-align: center;
+position: absolute;
+font-family: serif;
+margin-top:650px;
+margin-left: 230px;
+}
+
+</style>
+<div class="banner">
+<a class="chair"href="http://127.0.0.1:8000/Chair1">Chair and Benches</a>
+<a class="Tables"href="http://127.0.0.1:8000/Table1">Tables</a>
+<a class="Crouch"href="http://127.0.0.1:8000/Crouch1">Crouches</a>
+<a class="Bed"href="http://127.0.0.1:8000/Bed1">Beds</a>
+<a class="Lamp"href="http://127.0.0.1:8000/Lamp1">Lamps</a>
+<a class="Light"href="">Lights</a>
+</div>
+
+<style>
+.chair{
+margin-left: 100px;
+position: absolute;
+font-size: 40px;
+color: #ccc;
+text-decoration: none;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin-top:700px;
+}
+.Tables{
+margin-left: 100px;
+position: absolute;
+font-size: 40px;
+color: #ccc;
+text-decoration: none;
+margin-top: 750px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Crouch{
+
+margin-left: 100px;
+position: absolute;
+font-size: 40px;
+color: #ccc;
+text-decoration: none;
+margin-top: 800px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Bed{
+
+margin-left: 100px;
+position: absolute;
+font-size: 40px;
+color: #ccc;
+text-decoration: none;
+margin-top: 850px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Lamp{
+
+margin-left: 100px;
+position: absolute;
+font-size: 40px;
+color: #ccc;
+text-decoration: none;
+margin-top: 900px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Light{
+
+margin-left: 100px;
+position: absolute;
+font-size: 40px;
+color: #ccc;
+text-decoration: none;
+margin-top: 950px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.banner{
+margin-top: 520px;
+margin-left: 50px;
+}
+
+
+.Icon{
+margin-left: 40px;
+margin-top:720px;
+position: absolute;
+
+}
+</style>
+
+<div class="Icon">
+    <img class="Chair1" src="{% static 'images/Ch.png' %}" alt="">
+    <img class="Table" src="{% static 'images/bedd.png' %}" alt="">
+    <img class="Lightttt" src="{% static 'images/Lightt.png' %}" alt="">
+    <img class="Lampp" src="{% static 'images/lamppp.png' %}" alt="">
+    <img class="Crouch23" src="{% static 'images/Study.png' %}" alt="">
+    <img class="Lampp" src="{% static 'images/lamppp.png' %}" alt="">
+    <img class="sofa" src="{% static 'images/sofa.png' %}" alt="">
+
+</div>
+
+<style>
+.Chair1{
+height: 50px;
+width: 50px;
+margin-top: -10px;
+position: absolute;
+margin-left: 50px;
+}
+.Table{
+
+height: 50px;
+width: 50px;
+margin-top: 120px;
+position: absolute;
+margin-left: 50px;
+}
+.Lampp{
+height: 30px;
+width: 30px;
+margin-top: 180px;
+position: absolute;
+margin-left: 60px;
+}
+.Lightttt{
+height: 30px;
+width: 30px;
+margin-top: 220px;
+position: absolute;
+margin-left: 60px;
+}
+
+.Crouch23{
+height: 30px;
+width: 30px;
+margin-top: 50px;
+position: absolute;
+margin-left: 60px;
+}
+
+.sofa{
+height: 40px;
+width: 40px;
+margin-top: 80px;
+position: absolute;
+margin-left: 60px;
+}
+
+.Chair2{
+margin-top: -130px;
+margin-left: 1000px;
+cursor:pointer;
+}
+
+</style>
+
+<style>
+    .Fox {
+        position: relative;
+        width: 100px;
+        height: 150px;
+    }
+
+    .Chair2 {
+        width: 600px;
+        height: 250px;
+        cursor: pointer;
+        margin-top: 650px;
+        margin-left:900px;
+        position: absolute;
+
+      }
+
+    .Chair23 {
+        width: 300px;
+        height: 300px;
+        cursor: pointer;
+        margin-top: 870px;
+        margin-left: 700px;
+    }
+    
+</style>
+</head>
+<body>
+<div class="Fox">
+    <img class="Chair2" src="{% static 'images/bulb.webp' %}" alt="">
+    <img class="Chair23" src="{% static 'images/Chairrr.jpg' %}" alt="">    
+</div>
+
+<div class="Catlog">
+<h1>Delership</h1>
+<img class="Chair231" src="{% static 'images/green.png' %}" alt="">
+<img class="Chair232" src="{% static 'images/cast.jpeg' %}" alt="">
+<img class="Chair234" src="{% static 'images/basset.png' %}" alt="">
+<img class="Chair235" src="{% static 'images/Duu.jpg' %}" alt="">
+    
+</div>
+<style>
+.Catlog h1{
+margin-top: 1750px;
+position: absolute;
+margin-left: 450px;
+font-family: serif;
+}
+
+.Chair231{
+width: 200px;
+height: 200px;
+border-radius: 30px;
+box-shadow: 0px 0px 5px white;
+margin-top:1850px;
+margin-left: 50px;
+position: absolute;
+}
+
+.Chair232{
+width: 200px;
+height: 200px;
+border-radius: 30px;
+box-shadow: 0px 0px 5px white;
+margin-top:1850px;
+margin-left: 300px;
+position: absolute;
+}
+
+.Chair234{
+width: 200px;
+height: 200px;
+border-radius: 30px;
+box-shadow: 0px 0px 5px white;
+margin-top:1850px;
+margin-left: 550px;
+position: absolute;
+}
+
+.Chair235{
+width: 200px;
+height: 200px;
+border-radius: 30px;
+box-shadow: 0px 0px 5px white;
+margin-top:1850px;
+margin-left: 790px;
+position: absolute;
+}
+
+.Catlog img:hover{
+    transform: rotate(360deg);
+    transition: 0.5s ease;
+}    
+
+.Catlog{
+margin-left: 300px;
+margin-top: 200px;
+position: absolute;
+}
+
+</style>
+<div class="Introduce">
+    <img src="{% static 'images/Royale.jpg' %}" alt="">
+    <p>Royale Furniture, a name synonymous with quality and elegance, has been a pillar of the furniture industry since its establishment in 1999.<br> With over two decades of experience, we have consistently strived to provide our customers with the finest in home furnishings and lighting solutions.<br>
+
+        Our journey began with a vision to transform living spaces into havens of style and comfort. Over the years, we have evolved, adapting to the ever-changing<br> preferences and needs of our discerning clientele. We take pride in offering a diverse range of furniture and<br> lighting options, catering to various tastes, from the timeless charm of mid-century classics to the contemporary allure of modern designs.<br>
+        
+        At the heart of our philosophy is a commitment to delivering not just products but experiences. We believe that furniture<br> should be an extension of your personality and lifestyle. Each piece in our collection is carefully curated to ensure<br> it blends seamlessly with your existing decor while adding a touch of sophistication<br> and functionality.
+        
+        Our furniture reflects a fusion of form and function, where aesthetics meet practicality. From cozy couches to elegant dining<br> tables, every item is designed to provide both visual appeal and comfort. We understand that a home is more than just a physical space;<br> it's an embodiment of your unique style, and our offerings are crafted to enhance the ambiance of your living areas.
+        
+        </p>
+</div>
+<style>
+.Introduce img{
+
+margin-left: 680px;
+margin-top: 1100px;
+position: absolute;
+border-radius:200px;
+box-shadow: 0px 10px 5px brown;
+width: 250px;
+height: 250px;
+}
+
+.Introduce p{
+text-align: center;
+font-size: 22px;
+margin-top: 1400px;
+position: absolute;
+margin-left: 80px;
+font-family: serif;
+}
+</style>
+<style>
+.Velvet {
+font-size: 25px;
+font-family: serif ;
+font-weight: 100;
+color: goldenrod;
+margin-left: 130px;
+}
+
+.Velvet2 {
+font-size: 25px;
+font-family: serif ;
+font-weight: 100;
+color: goldenrod;
+margin-left: 500px;
+margin-top: -50px;
+}
+
+.Velvet3 {
+font-size: 25px;
+font-family: serif ;
+font-weight: 100;
+color: goldenrod;
+margin-left: 900px;
+margin-top: -45px;
+}
+
+.Velvet4 {
+font-size: 25px;
+font-family: serif ;
+font-weight: 100;
+color: goldenrod;
+margin-left: 1300px;
+margin-top: -45px;
+}
+.Label a{
+font-size: 30px;
+margin-left: 750px;
+margin-top: 50px;
+border: ridge;
+text-decoration: none;
+padding:10px 20px;
+position: absolute;
+color: #fff;
+border-radius: 30px;
+
+}
+
+.Label a:hover{
+padding: 10px 35px;
+transition:0.5s ease
+
+}
+.Footer h1{
+margin-top: 250px;
+width: 1620px;
+height: 630px;
+margin-left: -7px;
+font-size: 1px;
+background-color: rgba(48, 29, 7, 0.9);
+border-top-right-radius:30px;
+border-top-left-radius: 50px;
+position: absolute;
+}
+
+.Footer img{
+margin-top: 300px;
+position: absolute;
+width: 100px;
+height: 100px;
+border-radius: 50px;
+margin-left: 50px;
+box-shadow: 0px 7px 5px brown;
+ 
+}
+.Footer{
+margin-top: 2300px;
+position: absolute;
+margin-left: 0px;
+}
+</style>
+
+<div class="container">
+    <h1 class="Our">Our Items</h1>
+    <a href="http://127.0.0.1:8000/Lights1"><img class="Chair233" src="{% static 'images/CC6.jpg' %}"/></a>
+    <a href="http://127.0.0.1:8000/Lamp1"><img class="Lamp22" src="{% static 'images/Chair45.jpg' %}"/></a>
+    <a href="http://127.0.0.1:8000/Bed1"><img class="Groom" src="{% static 'images/beds.jpg' %}"/></a>
+    <a href="http://127.0.0.1:8000/Chair1"><img class="black" src="{% static 'images/chairrr.jpg' %}"/></a>
+    <a href="#"><img class="Groom" src="{% static 'images/beds.jpg' %}"/></a>
+    <a href="http://127.0.0.1:8000/Crouch1"><img class="comfort" src="{% static 'images/sofa45.jpg' %}"/></a>
+    <a href="http://127.0.0.1:8000/Swing1"><img class="Swing" src="{% static 'images/Swing.avif' %}"/></a>
+    <a href="#"><img class="Almira" src="{% static 'images/Almira.jpg' %}"/></a>
+</div> 
+<style>
+.container {
+  position: absolute;
+  margin-top: 2700px;
+  margin-left: -30px;  
+
+}
+
+.Our{
+margin-top: -180px;
+position: absolute;
+margin-left: 800px;
+text-align: center;
+color: #fff;
+font-family: serif;
+}
+
+.Chair233 {
+  transition: transform .2s;
+  width: 200px;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 10px;  
+  box-shadow: 0px 0px 5px  silver;  
+  margin-left: 300px;
+  margin-top: -100px;  
+}
+.Chair233:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  transition: 0.5s ease;  
+}
+
+.Lamp22{
+width: 700px;
+height: 170px;
+border-radius: 10px;
+box-shadow: 0px 0px 5px white;
+}
+
+.Lamp22:hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  transition: 0.5s ease;  
+}
+
+.Groom{
+width: 270px;
+height: 125px;
+border-radius: 10px;
+box-shadow: 0px 0px 5px white;
+margin-top: -100px;
+margin-left: -700px;
+position: absolute;
+}
+
+.Groom:hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  transition: 0.5s ease;  
+}
+
+
+.black{
+width: 200px;
+height: 125px;
+border-radius: 10px;
+box-shadow: 0px 0px 5px white;
+margin-top: -100px;
+margin-left: -425px;
+position: absolute;
+}
+
+.black:hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  transition: 0.5s ease;  
+}
+
+.comfort{
+width: 220px;
+height: 125px;
+border-radius: 10px;
+box-shadow: 0px 0px 5px white;
+margin-top: -100px;
+margin-left: -220px;
+position: absolute;
+}
+
+.comfort:hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  transition: 0.5s ease;  
+}
+
+
+.Swing{
+width: 150px;
+height: 150px;
+border-radius: 10px;
+box-shadow: 0px 0px 5px white;
+margin-top: -100px;
+margin-left: 5px;
+position: absolute;
+}
+
+.Swing:hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  transition: 0.5s ease;  
+}
+
+.Almira{
+width: 150px;
+height: 150px;
+border-radius: 10px;
+box-shadow: 0px 0px 5px white;
+margin-top: 53px;
+margin-left: 5px;
+position: absolute;
+}
+
+.Almira:hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+  transition: 0.5s ease;  
+}
+</style>  
+<div class="Footer">
+  <h1>.</h1>  
+  <a href="#"><img src="{% static 'images/Royale.jpg' %}" alt=""></a>      
+   
+</div>
+
+<div class="Eng">
+<h1>Enquires</h1>
+<p>For More Details and Enquires:<br>Login to www.RoyalFurniture.com<br>TheRoyaleFurniture@gmail.com +91 8949167574,+91 9694140058</p>
+</div>
+
+<style>
+.Eng h1{
+
+margin-top: 550px;
+position: absolute;
+color: goldenrod;
+margin-left: 250px;
+text-decoration: underline;
+text-decoration-thickness:0.3px;
+font-family: serif;
+}
+
+.Eng p{
+margin-top: 600px;
+position: absolute;
+margin-left: 250px;
+font-size: 23px;
+font-family: serif;
+}
+
+.Eng h5{
+font-family: serif;
+position: absolute;
+
+}
+
+.Eng{
+position: absolute;
+margin-top:2550px;
+font-family:serif;
+
+}
+.open{
+margin-top: 550px;
+position: absolute;
+margin-left:550px;
+font-size: 23px;
+font-weight: 200;
+
+}
+
+
+.Import {
+margin-top: 3100px;
+position: absolute;    
+font-size: 28px;
+color:goldenrod;
+margin-left: 750px;
+text-decoration: underline;
+text-decoration-thickness: 0.2px;
+font-family: serif;
+}
+
+.Prod{
+margin-top: 3100px;
+position: absolute;    
+font-size: 28px;
+color:goldenrod;
+margin-left: 1000px;
+text-decoration: underline;
+text-decoration-thickness: 0.2px;
+font-family: serif ;
+}
+.Add{
+margin-top: 3100px;
+position: absolute;    
+font-size: 28px;
+color:goldenrod;
+margin-left: 1300px;
+text-decoration: underline;
+text-decoration-thickness: 0.2px;
+font-family: serif;
+}
+
+</style>
+<div class="Footer1">
+<h1 class="Import">Important</h1>
+<h1 class="Prod">Products</h1>
+<h1 class="Add">Address</h1>
+</div>
+
+<div class="Import1">
+<a class="Home" href="http://127.0.0.1:8000/">Home</a>
+<a class="Class"href="http://127.0.0.1:8000/AboutUS">Aboutus</a>
+<a class="About"href="#">Light</a>
+<a class="Lightss"href="#">Furniture</a>
+<a class="Con"href="#">Contact</a>
+<a class="Sign"href="#">Signin</a>
+
+
+</div>
+
+<style>
+.Home{
+margin-top: 2950px;
+position: absolute;
+margin-left: 780px;
+font-size: 23px;
+text-decoration: none;
+color: #fff;
+font-family: serif;
+}
+.Class{
+margin-top: 2980px;
+position: absolute;
+margin-left: 780px;
+font-size: 23px;
+text-decoration: none;
+color: #fff;
+font-family: serif;
+}
+.About{
+margin-top: 3010px;
+position: absolute;
+margin-left: 780px;
+font-size: 23px;
+text-decoration: none;
+color: #fff;
+font-family: serif;
+}
+
+.Lightss{
+margin-top: 3040px;
+position: absolute;
+margin-left: 780px;
+font-size: 23px;
+text-decoration: none;
+color: #fff;
+font-family: serif;
+}
+
+.Con{
+margin-top: 3067px;
+position: absolute;
+margin-left: 780px;
+font-size: 23px;
+text-decoration: none;
+color: #fff;
+font-family: serif;
+}
+
+
+.Sign{
+margin-top: 3090px;
+position: absolute;
+margin-left: 780px;
+font-size: 23px;
+text-decoration: none;
+color: #fff;
+font-family: serif;
+}
+.Import1 a:hover{
+color: goldenrod;
+transition: 0.5s ease;
+}
+.Import1 {
+margin-top: 200px;
+
+}
+
+</style>
+<div class="Pro">
+    <a class="Bed1" href="#">Beds</a>
+    <a class="Chair"href="#">Chairs</a>
+    <a class="Bulb"href="#">Light</a>
+    <a class="Candle"href="#">Candliers</a>
+    <a class="Lamp23"href="#">Lamps</a>
+    <a class="Crouh"href="#">Crouches</a>
+    <a class="Gard"href="#">Gardenlights</a>
+</div>
+
+<style>
+.Bed1{
+
+margin-top: 400px;
+position: absolute;
+margin-left: 1100px;
+font-size: 20px;
+text-decoration: none;
+color: #fff;
+font-family: serif;
+}
+
+.Chair{
+
+margin-top: 430px;
+position: absolute;
+margin-left: 1100px;
+font-size: 20px;
+text-decoration: none;
+color: #fff;
+font-family: serif;
+}
+
+.Bulb{
+
+margin-top: 460px;
+position: absolute;
+margin-left: 1100px;
+font-size: 20px;
+text-decoration: none;
+color: #fff;
+font-family: serif;
+}
+
+.Candle{
+
+margin-top: 490px;
+position: absolute;
+margin-left: 1100px;
+font-size: 20px;
+text-decoration: none;
+color: #fff;
+font-family: serif;
+
+}
+
+.Lamp23{
+
+margin-top: 520px;
+position: absolute;
+margin-left: 1100px;
+font-size: 20px;
+text-decoration: none;
+color: #fff;
+font-family: serif;
+
+}
+
+.Crouh{
+
+margin-top: 550px;
+position: absolute;
+margin-left: 1100px;
+font-size: 20px;
+text-decoration: none;
+color: #fff;
+font-family: serif;
+}
+
+.Out{
+
+margin-top: 580px;
+position: absolute;
+margin-left: 1050px;
+font-size: 20px;
+text-decoration: none;
+color: #fff;
+font-family: serif;
+
+}
+
+.Gard{
+
+margin-top: 580px;
+position: absolute;
+margin-left: 1100px;
+font-size: 20px;
+text-decoration: none;
+color: #fff;
+font-family: serif;
+
+}
+
+.Pro {
+margin-left: -80px;
+margin-top: 2545px;
+position: absolute;
+font-family: serif;
+}
+.Pro a{
+font-size: 23px;
+font-family: serif;
+}
+
+.Pro a:hover{
+color: goldenrod;
+transition: 0.5s ease;
+}
+.Showroom p{
+margin-top: 2950px;
+position: absolute;
+margin-left: 1280px;
+font-size: 23px;
+font-family: serif;
+}
+.Showroom .Pin{
+margin-top: 3130px;
+position: absolute;
+font-family: serif;
+}
+.Log{
+position: absolute;
+margin-top: 3200px;
+margin-left: 1270px;
+font-size: 35px;
+text-decoration: none;
+color: goldenrod;
+border: ridge;
+border-radius:150px;
+padding: 5px 25px;
+background-color: black;
+}
+.Log:hover{
+padding: 5px 35px;
+transition: 0.5s ease;
+
+}
+.Footer{
+margin-top: 2800px;
+position: absolute;
+margin-left: 5px;
+}
+
+
+
+</style>
+<div class="Showroom">
+<p>Showroom Address:<br>Royal furniture private Ltd<br>Bhagwan talkies near<br> SRK mall Agra</p>
+<p class="Pin"> Pincode:-328024</p>
+<a class="Log" href="#">Login</a>
+</div>
+<body>
+    <!-- Your website content goes here -->
+  
+    <!-- Scroll to Top button -->
+    <button id="scrollToTopBtn" onclick="scrollToTop()">Scroll to Top</button>
+
+    <!-- Add your other scripts and footer content here -->
+  </body>
+  </html>
+  
+  <style>
+  #scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color:burlywood;
+    color: black;
+    border: ridge;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    border-color: black;
+}
+  
+  #scrollToTopBtn:hover {
+    background-color: black;
+    color: burlywood;
+    transition: 0.5s ease;
+    border-color: gold;
+}
+  
+  
+  </style>
+      
+  <script>
+  // Function to scroll back to the top of the page smoothly
+  function scrollToTop() {
+    // Scroll to the top of the page using the `scrollTo` method
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Adds smooth scrolling effect
+    });
+  }
+  
+  // Attach a scroll event listener to the window
+  window.addEventListener('scroll', function() {
+    var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    
+    // Show the button when the user has scrolled down 20% of the page height
+    if (document.body.scrollTop > window.innerHeight * 0.2 || document.documentElement.scrollTop > window.innerHeight * 0.2) {
+      scrollToTopBtn.style.display = 'block';
+    } else {
+      scrollToTopBtn.style.display = 'none';
+    }
+  });
+  </script>
+  <script>
+    ScrollReveal({ reset: true });
+	
+	ScrollReveal().reveal(".show-once", {
+	  reset: false
+	});
+	
+	ScrollReveal().reveal(".Lamp1", {
+	  duration: 2000,
+	  scale:0.85
+	});
+	
+	ScrollReveal().reveal(".Lamp2", {
+	  duration: 2000,
+	  move: 0
+	});
+	  
+    ScrollReveal().reveal(".Lamp3", {
+	  duration: 2000,
+	  move: 0
+	});
+	
+    ScrollReveal().reveal(".heading h1", {
+	  duration: 2000,
+	  move: 0
+	});
+	
+    ScrollReveal().reveal(".heading h2", {
+	  duration: 2000,
+	  move: 0
+	});
+	</script>
+<style>
+@media screen and (max-width:705px){
+    .Hover-link{
+      display:block;
+      margin-left: 30px;
+      margin-top: 50px;
+    }
+    
+    #navbar-right{
+    display: none;
+    position: absolute;
+   } 
+   .logo img{
+    align-items: center;
+    margin-top: -5px;
+    width: 70px;
+    height: 70px;
+    margin-left: 300px;
+    position: absolute;
+
+  } 
+   .heading h1{
+   font-size: 20px;
+   margin-left: 50px;
+   position: absolute; 
+  }
+  .heading h2{
+   font-size: 50px;
+   margin-left: 50px;
+   margin-top: -500px;
+   position: absolute;
+   
+  }
+  .Lights{
+  margin-left: 250px;
+  font-size: 20px;
+  position: absolute;  
+  margin-top: 100px;
+}
+  .Lamps{
+  margin-left: 50px;
+  font-size: 20px;
+  margin-top: 100px;   
+  position: absolute;
+
+}
+  .Couch{
+  margin-left: 500px;
+  font-size: 20px;
+  margin-top: 100px; 
+  position: absolute;  
+}
+
+.Sparks{
+margin-left: 10px;
+position: absolute;
+margin-top: -600px;
+}
+
+
+.Second h1{
+margin-left: 20px;
+position: absolute;
+margin-left: 250px;
+margin-top: 50px;
+}
+
+.Second p{
+font-size: 20px;
+margin-top: 150px;
+position: absolute;
+text-align: center;
+}
+
+.Second{
+margin-top: 300px;
+
+}
+
+.Icon{
+position: absolute;
+margin-top: 750px;
+margin-left: -40px;
+}
+
+.chair{
+position: absolute;
+margin-top: 750px;
+margin-left: -30px;
+font-size: 25px;
+}
+.Tables{
+position: absolute;
+margin-top:790px;
+margin-left:-30px;
+font-size: 25px;
+
+}
+
+.Crouch{
+position: absolute;
+margin-top: 830px;
+margin-left: -30px;
+font-size:25px;
+
+}
+
+.Bed{
+position: absolute;
+margin-top:990px;
+font-size:25px;
+margin-left: -30px;
+}
+
+.Lamp{
+position: absolute;
+margin-top:1030px;
+font-size:25px;
+margin-left:-30px;
+}
+.Light{
+position:absolute;
+margin-top:1070px;
+font-size: 25px;
+margin-left: -30px;
+}
+
+
+
+
+
+
+
+
+
+.Chair2{
+margin-top: 900px;
+width: 200px;
+height: 100px;
+margin-left: 230px;
+position: absolute;
+}
+.Chair23{
+margin-top: 1000px;
+margin-left:230px;
+position: absolute;
+width: 200px;
+height: 200px;
+}
+.Catlog h1{
+margin-top: 1100px;
+margin-left:-200px;
+position: absolute;
+}
+
+.Chair231{
+width: 100px;
+height: 100px;
+margin-top:1200px;
+margin-left:-150px;
+
+}
+
+
+.Chair232{
+width: 100px;
+height: 100px;
+margin-top:1650px;
+margin-left:-150px;
+
+}
+
+.Chair234{
+  width: 100px;
+height: 100px;
+margin-top:1350px;
+margin-left:-150px;
+}
+
+.Chair235{
+  width: 100px;
+height: 100px;
+margin-top:1500px;
+margin-left:-150px;
+
+
+}
+.Catlog{
+margin-top: 100px;
+
+}
+
+
+
+.Footer{
+margin-top: 3200px;
+margin-left: 1550px;
+position: absolute;
+}
+.container {
+margin-top: 3100px;
+width: 340px;
+height: 300px;
+position: absolute;
+margin-left:-40px;
+}
+.Chair233{
+width: 90px;
+height: 150px;
+margin-left: 50px;
+}
+.Lamp22{
+width: 280px;
+height: 80px;
+margin-top: -30px;
+margin-left: 5px;
+position: absolute;
+}
+.Groom{
+width: 100px;
+height: 70px;
+margin-left: 5px;
+margin-top: -102px;
+position: absolute;
+}
+.black{
+width: 70px;
+height: 70px;
+margin-left: 110px;
+margin-top: -102px;
+}
+.comfort{
+width: 100px;
+height: 70px;
+margin-left: 185px;
+margin-top: -102px;
+}
+.Swing{
+width: 70px;
+height: 70px;
+margin-left:290px;
+margin-top:-102px;
+}
+
+.Almira{
+width:70px;
+height: 80px;
+margin-left:290px;
+margin-top: -30px;
+
+}
+.Our{
+margin-left: 190px;
+position: absolute;
+margin-top: -150px;
+}
+.Introduce img{
+width: 100px;
+height: 100px;
+margin-left: 150px;
+margin-top: 2000px;
+position: absolute;
+}
+.Introduce p{
+font-size: 17px;
+position: absolute;
+margin-top: 2200px;
+margin-left:5px;
+text-align: left;
+}
+
+.Footer h1{
+width: 500px;
+
+}
+}
+</style>
+<style>
+@media screen and (max-width:505px){
+    .Hover-link{
+      display:block;
+      margin-left: 30px;
+      margin-top: 50px;
+    }
+    
+    #navbar-right{
+    display: none;
+    position: absolute;
+   } 
+   .logo img{
+    align-items: center;
+    margin-top: -5px;
+    width: 70px;
+    height: 70px;
+    margin-left: 120px;
+    position: absolute;
+
+  } 
+   .heading h1{
+   font-size: 20px;
+   margin-left: 50px;
+   position: absolute; 
+  }
+  .heading h2{
+   font-size: 50px;
+   margin-left: 50px;
+   margin-top: -500px;
+   position: absolute;
+   
+  }
+  .Lights{
+  margin-left: 250px;
+  font-size: 20px;
+  position: absolute;  
+  margin-top: -50px;
+}
+  .Lamps{
+  margin-left: 50px;
+  font-size: 20px;
+  margin-top: -50px;   
+  position: absolute;
+
+}
+  .Couch{
+  margin-left: 100px;
+  font-size: 20px;
+  margin-top: 300px; 
+  position: absolute;  
+}
+
+.Sparks{
+margin-left: 10px;
+position: absolute;
+margin-top: -600px;
+}
+
+
+.Second h1{
+margin-left: 20px;
+position: absolute;
+margin-left: 150px;
+
+}
+
+.Second p{
+font-size: 18px;
+margin-top: 200px;
+position: absolute;
+text-align: left;
+}
+
+.Second{
+margin-top: 300px;
+
+}
+
+.Icon{
+position: absolute;
+margin-top: 850px;
+margin-left: -40px;
+}
+
+.chair{
+position: absolute;
+margin-top: 870px;
+margin-left: -30px;
+font-size: 25px;
+}
+.Tables{
+position: absolute;
+margin-top:910px;
+margin-left:-30px;
+font-size: 25px;
+
+}
+
+.Crouch{
+position: absolute;
+margin-top: 950px;
+margin-left: -30px;
+font-size:25px;
+
+}
+
+.Bed{
+position: absolute;
+margin-top:990px;
+font-size:25px;
+margin-left: -30px;
+}
+
+.Lamp{
+position: absolute;
+margin-top:1030px;
+font-size:25px;
+margin-left:-30px;
+}
+.Light{
+position:absolute;
+margin-top:1070px;
+font-size: 25px;
+margin-left: -30px;
+}
+
+
+
+
+
+
+
+
+
+.Chair2{
+margin-top: 900px;
+width: 200px;
+height: 100px;
+margin-left: 230px;
+position: absolute;
+}
+.Chair23{
+margin-top: 1000px;
+margin-left:230px;
+position: absolute;
+width: 200px;
+height: 200px;
+}
+.Catlog h1{
+margin-top: 1100px;
+margin-left:-200px;
+position: absolute;
+}
+
+.Chair231{
+width: 100px;
+height: 100px;
+margin-top:1200px;
+margin-left:-150px;
+
+}
+
+
+.Chair232{
+width: 100px;
+height: 100px;
+margin-top:1650px;
+margin-left:-150px;
+
+}
+
+.Chair234{
+  width: 100px;
+height: 100px;
+margin-top:1350px;
+margin-left:-150px;
+}
+
+.Chair235{
+  width: 100px;
+height: 100px;
+margin-top:1500px;
+margin-left:-150px;
+
+
+}
+.Catlog{
+margin-top: 100px;
+
+}
+
+
+
+.Footer{
+margin-top: 3200px;
+
+}
+.container {
+margin-top: 3100px;
+width: 340px;
+height: 300px;
+position: absolute;
+margin-left:-40px;
+}
+.Chair233{
+width: 90px;
+height: 150px;
+margin-left: 50px;
+}
+.Lamp22{
+width: 280px;
+height: 80px;
+margin-top: -30px;
+margin-left: 5px;
+position: absolute;
+}
+.Groom{
+width: 100px;
+height: 70px;
+margin-left: 5px;
+margin-top: -102px;
+position: absolute;
+}
+.black{
+width: 70px;
+height: 70px;
+margin-left: 110px;
+margin-top: -102px;
+}
+.comfort{
+width: 100px;
+height: 70px;
+margin-left: 185px;
+margin-top: -102px;
+}
+.Swing{
+width: 70px;
+height: 70px;
+margin-left:290px;
+margin-top:-102px;
+}
+
+.Almira{
+width:70px;
+height: 80px;
+margin-left:290px;
+margin-top: -30px;
+
+}
+.Our{
+margin-left: 190px;
+position: absolute;
+margin-top: -150px;
+}
+.Introduce img{
+width: 100px;
+height: 100px;
+margin-left: 150px;
+margin-top: 2000px;
+position: absolute;
+}
+.Introduce p{
+font-size: 17px;
+position: absolute;
+margin-top: 2200px;
+margin-left:5px;
+text-align: left;
+}
+
+.Footer h1{
+width: 500px;
+
+}
+}
+</style>
+<style>
+@media screen and (max-width:405px){
+    .Hover-link{
+      display:block;
+      margin-left: 30px;
+      
+    }
+    
+    
+   
+   .logo img{
+    align-items: center;
+    margin-top: -5px;
+    width: 70px;
+    height: 70px;
+    margin-left: 120px;
+    position: absolute;
+
+  } 
+   .heading h1{
+   font-size: 20px;
+   margin-left: 50px;
+   position: absolute; 
+  }
+  .heading h2{
+   font-size: 50px;
+   margin-left: 50px;
+   margin-top: -500px;
+   position: absolute;
+   
+  }
+  .Lights{
+  margin-left: 250px;
+  font-size: 20px;
+  position: absolute;  
+  margin-top: -50px;
+}
+  .Lamps{
+  margin-left: 50px;
+  font-size: 20px;
+  margin-top: -50px;   
+  position: absolute;
+
+}
+  .Couch{
+  margin-left: 100px;
+  font-size: 20px;
+  margin-top: 300px; 
+  position: absolute;  
+}
+
+.Sparks{
+margin-left: 10px;
+position: absolute;
+margin-top: -600px;
+}
+
+
+.Second h1{
+margin-left: 20px;
+position: absolute;
+margin-left: 150px;
+
+}
+
+.Second p{
+font-size: 18px;
+margin-top: 200px;
+position: absolute;
+text-align: left;
+}
+
+.Second{
+margin-top: 300px;
+
+}
+
+.Icon{
+position: absolute;
+margin-top: 850px;
+margin-left: -40px;
+}
+
+.chair{
+position: absolute;
+margin-top: 870px;
+margin-left: -30px;
+font-size: 25px;
+}
+.Tables{
+position: absolute;
+margin-top:910px;
+margin-left:-30px;
+font-size: 25px;
+
+}
+
+.Crouch{
+position: absolute;
+margin-top: 950px;
+margin-left: -30px;
+font-size:25px;
+
+}
+
+.Bed{
+position: absolute;
+margin-top:990px;
+font-size:25px;
+margin-left: -30px;
+}
+
+.Lamp{
+position: absolute;
+margin-top:1030px;
+font-size:25px;
+margin-left:-30px;
+}
+.Light{
+position:absolute;
+margin-top:1070px;
+font-size: 25px;
+margin-left: -30px;
+}
+
+
+
+
+
+
+
+
+
+.Chair2{
+margin-top: 900px;
+width: 200px;
+height: 100px;
+margin-left: 230px;
+position: absolute;
+}
+.Chair23{
+margin-top: 1000px;
+margin-left:230px;
+position: absolute;
+width: 200px;
+height: 200px;
+}
+.Catlog h1{
+margin-top: 1100px;
+margin-left:-200px;
+position: absolute;
+}
+
+.Chair231{
+width: 100px;
+height: 100px;
+margin-top:1200px;
+margin-left:-150px;
+
+}
+
+
+.Chair232{
+width: 100px;
+height: 100px;
+margin-top:1650px;
+margin-left:-150px;
+
+}
+
+.Chair234{
+  width: 100px;
+height: 100px;
+margin-top:1350px;
+margin-left:-150px;
+}
+
+.Chair235{
+  width: 100px;
+height: 100px;
+margin-top:1500px;
+margin-left:-150px;
+
+
+}
+.Catlog{
+margin-top: 100px;
+
+}
+
+
+
+.Footer{
+margin-top: 3200px;
+
+}
+.container {
+margin-top: 3100px;
+width: 340px;
+height: 300px;
+position: absolute;
+margin-left:px;
+}
+.Chair233{
+width: 70px;
+height: 140px;
+margin-left: 40px;
+}
+.Lamp22{
+width: 240px;
+height: 70px;
+margin-top: -30px;
+margin-left: 5px;
+position: absolute;
+}
+.Groom{
+width: 80px;
+height: 70px;
+margin-left: 5px;
+margin-top: -102px;
+position: absolute;
+}
+.black{
+width: 70px;
+height: 70px;
+margin-left: 90px;
+margin-top: -102px;
+}
+.comfort{
+width: 80px;
+height: 70px;
+margin-left: 165px;
+margin-top: -102px;
+}
+.Swing{
+width: 50px;
+height: 70px;
+margin-left:247px;
+margin-top:-102px;
+}
+
+.Almira{
+width:50px;
+height: 70px;
+margin-left:247px;
+margin-top: -30px;
+
+}
+
+.Our{
+margin-left: 190px;
+position: absolute;
+margin-top: -150px;
+}
+.Introduce img{
+width: 100px;
+height: 100px;
+margin-left: 150px;
+margin-top: 2000px;
+position: absolute;
+}
+.Introduce p{
+font-size: 17px;
+position: absolute;
+margin-top: 2200px;
+margin-left:5px;
+text-align: left;
+}
+
+.Footer h1{
+width: 400px;
+border-top-left-radius: 30px;
+border-top-right-radius:30px;
+}
+
+}
+
+</style>

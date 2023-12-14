@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swastrade</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/infinite.jpg' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Home.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="navbar">
+        <div id="navbar-right">
+            <a href="http://127.0.0.1:8000/#">Home</a>
+            <a href="http://127.0.0.1:8000/AboutUS">Aboutus</a>
+            <a href="http://127.0.0.1:8000/Lights1">ShopNow</a>
+            <a href="http://127.0.0.1:8000/Contact">contactUS</a>
+            <a href="http://127.0.0.1:8000/Blog" id="login">blog</a>
+        </div>
+        <div class="logo">
+            <a href="http://127.0.0.1:8000/"><img src="{% static 'images/Royale.jpg' %}" alt=""></a>
+        </div>
+            
+        <div class="Email">
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        
+        <div class="Cart">
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+  
+        <div class="Login">
+            <a href="#"><i class="fa-sharp fa-solid fa-image-portrait"></i></a>  
+          </div>
+  
+    </div>
+</body>
+</html>
+
+<style>
+body {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: black;
+    background-image: linear-gradient(goldenrod);
+    color: #fff;
+    font-family:serif;
+    overflow-x: hidden;
+  }
+
+#navbar {
+    overflow: hidden;
+    background-size: 100%;
+    padding: 10px 10px;
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    text-align: center; /* Center align the navbar content */
+    backdrop-filter: blur(10px); /* Add backdrop-filter with the desired blur radius */
+    background-color: rgba(0, 0, 0, 0.0);
+    height: 70px;
+}
+#navbar-right {
+    display: inline-block; /* Change from float to inline-block */
+    margin-top: 10px; /* Add margin to align the content vertically */
+}
+
+#navbar-right a {
+    margin: 0 20px; /* Add horizontal margin between navbar items */
+}
+
+#navbar a {
+    float: left;
+    color: burlywood;
+    text-align: left;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 20px;
+    border-radius: 4px;
+    font-family: serif;
+    margin-left: 20px;
+    transition: 0.5s ease; /* Add a smooth transition effect */
+}
+
+#navbar a:hover {
+    color: white; /* Change the text color to white on hover */
+}
+
+
+ .logo img{
+    height: 120px;
+    margin-left: 30px;
+    margin-top: -75px;
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+    width:110px;
+    
+}
+ i {
+margin-left: 1070px;
+position: absolute;
+margin-top: -45px;
+font-size: 30px;
+}
+i {
+margin-left: 1090px;
+position: absolute;
+margin-top: -45px;
+font-size: 30px;
+display: flex;
+
+}
+.Email{
+margin-left: 150px;
+position: absolute;
+}
+
+.Cart{
+margin-left: 230px;
+}
+
+.Login{
+margin-left: 320px;
+position: absolute;
+
+}
+
+
+
+
+</style>
+<div class="Banner">
+    <img src="{% static 'images/bannn.jpg' %}" alt="">
+    <a href="https://www.business-standard.com/article/pf/make-your-style-statement-without-words-with-some-showstopper-furniture-119012500420_1.html"><h1>.</h1></a>
+</div>
+
+<style>
+.Banner img{
+margin-top: 200px;
+position: absolute;
+border-radius: 10px;
+width: 1545px;
+height: 440px;
+margin-left: 50px;
+box-shadow: 0px 2px 5px rgba(34, 190, 107, 0.9) ;
+}
+.Banner h1{
+margin-top: 200px;
+position: absolute;
+width: 1545px;
+height: 440px;
+border-radius: 10px;
+font-size: 1px;
+border-width: 1px;
+margin-left: 50px;
+background: linear-gradient(300deg, rgba(138, 121, 121, 0.9), rgba(200, 50, 5, 0.3), rgba(68, 156, 109, 0.3));
+
+}
+.Banner{
+margin-top: -2590px;
+position: absolute;
+width: 1540px;
+margin-left: -40px;
+}
+.Banner h1:hover{
+background-color:rgba(0, 0, 0, 0.3);
+transition: 0.5s ease;
+
+}
+</style>
+
+<div class="Wrote">
+<h1>Make Statement in style....</h1>
+<p>Where style meets functionality. Immerse yourself in a world of<br> design excellence, curated to transform your living spaces<br> into reflections of your unique taste. Our collection boasts a harmonious blend<br> of modern aesthetics and timeless elegance, offering a diverse range of lighting<br> solutions and furniture pieces crafted to perfection.</p>
+</div>
+<style>
+ .Wrote h1{
+    position: absolute;
+    margin-top: -2250px;
+    font-weight: 100;
+    font-size: 50px;
+    margin-left: 100px;
+    color: rgb(52, 156, 151);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }   
+ .Wrote p{
+   margin-top: -2150px;
+   position: absolute;
+   margin-left: 100px;
+   font-size: 22px; 
+   color: rgba(200,100, 0,0.9);
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+ }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="Footer">
+    <h1>.</h1>  
+    <a href="#"><img src="{% static 'images/Royale.jpg' %}" alt=""></a>      
+     
+  </div>
+  
+  <div class="Eng">
+  <h1>Enquires</h1>
+  <p>For More Details and Enquires:<br>Login to www.RoyalFurniture.com<br>TheRoyaleFurniture@gmail.com<br>+91 8949167574,+91 9694140058</p>
+  <h5 class="open">Bussiness Hours<br>Open Timeing 10:30AM to 8:30PM<br>all day Open</h5>
+  
+  </div>
+  
+  <style>
+  .Eng h1{
+  
+  margin-top: 350px;
+  position: absolute;
+  color: goldenrod;
+  margin-left: 250px;
+  text-decoration: underline;
+  text-decoration-thickness:0.3px;
+  }
+  
+  .Eng p{
+  margin-top: 400px;
+  position: absolute;
+  margin-left: 250px;
+  font-size: 23px;
+  
+  }
+  .open{
+  margin-top: 550px;
+  position: absolute;
+  margin-left:250px;
+  font-size: 23px;
+  font-weight: 300;
+  
+  }
+  
+  .Import {
+  margin-top: 350px;
+  position: absolute;    
+  font-size: 28px;
+  color:goldenrod;
+  margin-left: 750px;
+  text-decoration: underline;
+  text-decoration-thickness: 0.2px;
+  font-family: serif;
+  }
+  
+  .Prod{
+  margin-top: 350px;
+  position: absolute;    
+  font-size: 28px;
+  color:goldenrod;
+  margin-left: 1000px;
+  text-decoration: underline;
+  text-decoration-thickness: 0.2px;
+  font-family: serif ;
+  }
+  .Add{
+  margin-top: 350px;
+  position: absolute;    
+  font-size: 28px;
+  color:goldenrod;
+  margin-left: 1300px;
+  text-decoration: underline;
+  text-decoration-thickness: 0.2px;
+  font-family: serif;
+  }
+
+  .Footer h1{
+margin-top: 250px;
+width: 1585px;
+height: 630px;
+margin-left: -10px;
+font-size: 1px;
+background-color: rgba(48, 29, 7, 0.9);
+border-top-right-radius: 100px;
+border-top-left-radius: 100px;
+position: absolute;
+}
+
+.Footer img{
+margin-top: 300px;
+position: absolute;
+width: 100px;
+height: 100px;
+border-radius: 50px;
+margin-left: 50px;
+box-shadow: 0px 7px 5px brown;
+ 
+}
+.Footer{
+margin-top:2500px;
+
+}
+  </style>
+  <div class="Footer1">
+  <h1 class="Import">Important</h1>
+  <h1 class="Prod">Products</h1>
+  <h1 class="Add">Address</h1>
+  </div>
+  
+  <div class="Import1">
+  <a class="Home" href="http://127.0.0.1:8000/">Home</a>
+  <a class="Class"href="http://127.0.0.1:8000/AboutUS">Aboutus</a>
+  <a class="About"href="#">Light</a>
+  <a class="Lightss"href="#">Furniture</a>
+  <a class="Con"href="#">Contact</a>
+  <a class="Sign"href="#">Signin</a>
+  
+  
+  </div>
+  
+  <style>
+  .Home{
+  margin-top: 400px;
+  position: absolute;
+  margin-left: 780px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  }
+  .Class{
+  margin-top: 430px;
+  position: absolute;
+  margin-left: 780px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  }
+  .About{
+  margin-top: 460px;
+  position: absolute;
+  margin-left: 780px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  }
+  
+  .Lightss{
+  margin-top: 490px;
+  position: absolute;
+  margin-left: 780px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  }
+  
+  .Con{
+  margin-top: 520px;
+  position: absolute;
+  margin-left: 780px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  }
+  
+  
+  .Sign{
+  margin-top: 550px;
+  position: absolute;
+  margin-left: 780px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  }
+  .Import1 a:hover{
+  color: goldenrod;
+  transition: 0.5s ease;
+  }
+  .Import1 a{
+  font-size: 23px;
+  }
+      
+  </style>
+  <div class="Pro">
+      <a class="Bed1" href="#">Beds</a>
+      <a class="Chair"href="#">Chairs</a>
+      <a class="Bulb"href="#">Light</a>
+      <a class="Candle"href="#">Candliers</a>
+      <a class="Lamp23"href="#">Lamps</a>
+      <a class="Crouh"href="#">Crouches</a>
+      <a class="Out"href="#">Outdoor Lights</a>
+      <a class="Gard"href="#">Gardenlights</a>
+  </div>
+  <style>
+  .Bed1{
+  
+  margin-top: 400px;
+  position: absolute;
+  margin-left: 1100px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  }
+  
+  .Chair{
+  
+  margin-top: 430px;
+  position: absolute;
+  margin-left: 1100px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  }
+  
+  .Bulb{
+  
+  margin-top: 460px;
+  position: absolute;
+  margin-left: 1100px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  }
+  
+  .Candle{
+  
+  margin-top: 490px;
+  position: absolute;
+  margin-left: 1100px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  
+  }
+  
+  .Lamp23{
+  
+  margin-top: 520px;
+  position: absolute;
+  margin-left: 1100px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  
+  }
+  
+  .Crouh{
+  
+  margin-top: 550px;
+  position: absolute;
+  margin-left: 1100px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  }
+  
+  .Out{
+  
+  margin-top: 580px;
+  position: absolute;
+  margin-left: 1100px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  
+  }
+  
+  .Gard{
+  
+  margin-top: 610px;
+  position: absolute;
+  margin-left: 1100px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-family: serif;
+  
+  }
+  
+  .Pro {
+  margin-left: -80px;
+  }
+  .Pro a{
+  font-size: 23px;
+  }
+  
+  .Pro a:hover{
+  color: goldenrod;
+  transition: 0.5s ease;
+  }
+  .Showroom p{
+  margin-top: 400px;
+  position: absolute;
+  margin-left: 1280px;
+  font-size: 23px;
+  }
+  .Showroom .Pin{
+  margin-top: 530px;
+  position: absolute;
+  }
+  .Log{
+  position: absolute;
+  margin-top: 650px;
+  margin-left: 1270px;
+  font-size: 35px;
+  text-decoration: none;
+  color: goldenrod;
+  border: ridge;
+  border-radius:150px;
+  padding: 15px 25px;
+  background-color: black;
+  border-color: goldenrod;  
+}
+  .Log:hover{
+  padding: 15px 35px;
+  transition: 0.5s ease;
+  }
+  .Showroom{
+    margin-top: 0px;
+
+  }
+  </style>
+  <div class="Showroom">
+  <p>Showroom Address:<br>Royal furniture private Ltd<br>Bhagwan talkies near<br> SRK mall Agra</p>
+  <p class="Pin"> Pincode:-328024</p>
+  <a class="Log" href="#">Login</a>
+  </div>
+  </style>
+  <button id="scrollToTopBtn" onclick="scrollToTop()">Scroll to Top</button>
+
+  <style>
+    #scrollToTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px;
+      background-color:burlywood;
+      color: black;
+      border: ridge;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: 400;
+      border-color: black;
+  }
+    
+    #scrollToTopBtn:hover {
+      background-color: black;
+      color: burlywood;
+      transition: 0.5s ease;
+      border-color: gold;
+  }
+    
+    
+    </style>
+        
+    <script>
+    // Function to scroll back to the top of the page smoothly
+    function scrollToTop() {
+      // Scroll to the top of the page using the `scrollTo` method
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Adds smooth scrolling effect
+      });
+    }
+    
+    // Attach a scroll event listener to the window
+    window.addEventListener('scroll', function() {
+      var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+      
+      // Show the button when the user has scrolled down 20% of the page height
+      if (document.body.scrollTop > window.innerHeight * 0.2 || document.documentElement.scrollTop > window.innerHeight * 0.2) {
+        scrollToTopBtn.style.display = 'block';
+      } else {
+        scrollToTopBtn.style.display = 'none';
+      }
+    });
+    </script>

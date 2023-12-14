@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Search</title>
+</head>
+<body>
+    <h1>Image Search</h1>
+    <form method="get" action="">
+        {{ form.search_query.label_tag }}
+        {{ form.search_query }}
+        <button type="submit">Search</button>
+    </form>
+
+    <h2>Search Results</h2>
+    <ul>
+        {% for image in images %}
+            <li>
+                <p>{{ image.title }}</p>
+                <img src="{{ image.image.url }}" alt="{{ image.title }}" width="200">
+            </li>
+        {% empty %}
+            <li>No images found for your search query.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

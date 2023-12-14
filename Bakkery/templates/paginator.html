@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {%load static%}
+
+    <style>
+        body {
+        height: 700px;
+        background-color: black;
+        background-image: linear-gradient(goldenrod);
+        color: #fff;
+}
+
+        /* Style for the search bar container */
+        .search-container {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin-top: 140px;
+            width: 280px;
+            margin-left: 100px;
+            border: 1px solid white;
+            position: absolute;            
+            font-family: serif;
+        }
+
+        /* Style for the search input field */
+        .search-input {
+            border: none;
+            width: 200px;
+            padding: 10px;
+            border-radius: 2px;
+            outline: none;
+            font-size: 20px;
+
+        }
+
+        /* Style for the search button */
+        .search-button {
+            background-color:burlywood;
+            color:black;
+            border: none;
+            padding: 14px 10px;
+            border-radius: 2px;
+            cursor: pointer;
+
+
+        }
+
+        .point h1{
+            font-size: 1px;
+            border: ridge;
+            width: 400px;
+            height: 1200px;
+            margin-top: 100px;
+            margin-left: 50px;
+            border-radius: 20px;
+            border-width: 2px;
+            border-radius: 5px;
+            border-color: brown;
+            position: absolute;
+        }
+        .point h2{
+            margin-top:250px;
+            font-size: 30px;
+            font-weight: 200;
+            font-family: serif;
+            text-decoration: underline;
+            color: burlywood;
+            margin-left: 100px;
+            text-decoration-thickness: 1px;
+            position: absolute;
+        }
+       .Candle12{
+        font-size: 25px;
+        text-decoration: none;
+        color: #fff;
+        margin-top: 300px;
+        position: absolute;
+        margin-left:100px;
+        }
+        .Flow1{
+        font-size: 25px;
+        text-decoration: none;
+        color: #fff;
+        margin-top: 320px;
+        position: absolute;
+        margin-left:100px;
+        }
+        .Han1{
+        font-size: 25px;
+        text-decoration: none;
+        color: #fff;
+        margin-top: 340px;
+        position: absolute;
+        margin-left:100px;
+        }
+
+        .Out1{
+        font-size: 25px;
+        text-decoration: none;
+        color: #fff;
+        margin-top: 360px;
+        position: absolute;
+        margin-left:100px;
+        }
+
+        .Pic1{
+        font-size: 25px;
+        text-decoration: none;
+        color: #fff;
+        margin-top: 380px;
+        position: absolute;
+        margin-left:100px;
+        }
+
+        .Pic2 {
+        font-size: 25px;
+        text-decoration: none;
+        color: #fff;
+        margin-top: 400px;
+        position: absolute;
+        margin-left:100px;
+        }
+
+        .Pic3{
+        font-size: 25px;
+        text-decoration: none;
+        color: #fff;
+        margin-top: 420px;
+        position: absolute;
+        margin-left:100px;
+        }
+
+       .product a:hover{
+        color: goldenrod;
+        transition: 0.5s ease;
+        }
+       .Seller{
+        font-size: 27px;
+        font-weight: 200;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        color: burlywood;
+        margin-top: 100px;
+        margin-left: 100px;    
+    }
+
+    .Pic5{
+        position: absolute;
+        margin-top: 100px;
+
+    }
+       
+    .Furniture a:hover{
+        color: goldenrod;
+        transition: 0.5s ease;
+
+       }   
+
+    .Furniture h1{
+     margin-left: 100px;
+     font-size: 30px;
+     font-weight: 200;   
+     text-decoration: underline;
+     text-decoration-thickness:1px;
+     color: burlywood;   
+     font-family: serif;   
+     position: absolute;   
+     margin-top: 500px;   
+    }   
+
+   .Candle1{
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 100px;
+    position: absolute;
+    color: #fff;
+    margin-top: 550px;
+    
+   }
+   
+   .Ceiling2{
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 100px;
+    position: absolute;
+    color: #fff;
+    margin-top:570px;
+    
+   }
+   .Flow3{
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 100px;
+    position: absolute;
+    color: #fff;
+    margin-top: 590px;
+    
+   }
+   .Han4{
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 100px;
+    position: absolute;
+    color: #fff;
+    margin-top: 610px;
+    }
+   
+    .Pic5{
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 100px;
+    position: absolute;
+    color: #fff;
+    margin-top: 630px;
+    }
+   .Pic6{
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 100px;
+    position: absolute;
+    color: #fff;
+    margin-top: 650px;
+    }
+   
+</style>
+
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Find product...">
+        <button type="submit" class="search-button">Search</button>
+    </div>
+ <div class="point">
+     <h1>.</h1>   
+     <h2>Lights</h2>      
+</div>
+<div class="product">
+    <a class="Candle12" href="#">Ceiling Chandliers  </a>   
+    <br> <a class="Flow1"href="http://127.0.0.1:8000/Lamp1">Floor Lamps </a>
+    <br> <a class="Han1" href="http://127.0.0.1:8000/Hang1">Hanging     </a>   
+    <br> <a class="Out1" href="http://127.0.0.1:8000/Out1">Outdoor lights</a>   
+    <br> <a class="Pic1" href="http://127.0.0.1:8000/Pic1">Picture Lights</a>   
+    <br> <a class="Pic2" href="http://127.0.0.1:8000/Wall1">Wall Lamps   </a>   
+    <br> <a class="Pic3" href="http://127.0.0.1:8000/Tasks1">Tasks Lighting</a>   
+</div>
+<div class="Furniture">
+<h1>Furniture</h1>
+    <a class="Candle1" href="http://127.0.0.1:8000/Bed1">Beds</a>   
+    <br> <a class="Ceiling2" href="http://127.0.0.1:8000/Chair1">Chairs</a>   
+    <br> <a class="Flow3" href="http://127.0.0.1:8000/Stool1">Moulded Stool</a>
+    <br> <a class="Han4" href="http://127.0.0.1:8000/Swing1">Garden Swing</a>   
+    <br> <a class="Pic5" href="http://127.0.0.1:8000/Table1">Tables</a>   
+    <br> <a class="Pic6" href="http://127.0.0.1:8000/Crouch1">Crouches</a>   
+       
+
+</div>
+    
+<style>
+    /* Style for the container of the dropdown */
+    .Fill{
+        color: burlywood;
+        font-size: 26px;
+        font-weight: 100;
+        margin-top: 750px;
+        text-decoration: underline;
+        text-decoration-thickness:1px ;
+        margin-left: 100px;
+        position: absolute;
+    }
+    
+    
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-top: 600px;
+        position: absolute;
+    }
+
+
+    /* Style for the dropdown button */
+    .dropdown-button {
+        background-color:burlywood;
+        color:black;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 19px;
+        margin-left: 100px;
+        width: 190px;
+        position: absolute;
+        margin-top: 200px;
+    }
+
+    /* Style for the dropdown content */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: black;
+        min-width: 190px;
+        box-shadow: 0px 8px 16px 0px white;
+        z-index: 1;
+        height: 200px;
+        margin-left: 100px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: 250px;
+    }
+    
+    /* Style for the dropdown items */
+    .dropdown-item {
+        padding: 10px;
+        text-decoration: none;
+        display: block;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* Hover effect for the dropdown items */
+    .dropdown-item:hover {
+        background-color: burlywood;
+        color: #333;
+        transition: 0.5s ease;
+    }
+
+    /* Show the dropdown content when the button is hovered over */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+</head>
+<body>
+<h1 class="Fill">Filter-price</h1>
+
+<!-- Dropdown container -->
+<div class="dropdown">
+    <!-- Dropdown button -->
+    <button class="dropdown-button">Select Price</button>
+
+    <!-- Dropdown content -->
+    <div class="dropdown-content">
+        <a href="http://127.0.0.1:8000/Cost1#" class="dropdown-item">.100-500</a>
+        <a href="http://127.0.0.1:8000/Cost2" class="dropdown-item">.500-1000</a>
+        <a href="http://127.0.0.1:8000/Cost3" class="dropdown-item">.1000-1500</a>
+        <a href="http://127.0.0.1:8000/Cost4" class="dropdown-item">.1500-2000</a>
+    </div>
+</div>
+
+<div class="Page">
+    <h1>.</h1>
+   
+</div>
+
+
+
+<style>
+
